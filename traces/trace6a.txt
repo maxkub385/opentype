@@ -1,0 +1,14 @@
+A B B D
+
+feature: liga, lookup: 2/0/1, pos: 0,1
+|A B| ---> 0->0 1->1
+> C E
+
+feature: liga, lookup: 3, pos: 0
+C -> R
+> R E
+
+feature: liga, lookup: 3, pos: 1
+E -> T
+R > T
+

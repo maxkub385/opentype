@@ -1,0 +1,19 @@
+<vhea>
+  <tableVersion value="0x00010000"/>
+  <ascent value="1000"/>
+  <descent value="0"/>
+  <lineGap value="0"/>
+  <advanceHeightMax value="0"/> <!-- Will be recalculated -->
+  <minTopSideBearing value="0"/> <!-- Will be recalculated -->
+  <minBottomSideBearing value="0"/> <!-- Will be recalculated -->
+  <yMaxExtent value="0"/> <!-- Will be recalculated -->
+  <caretSlopeRise value="0"/>
+  <caretSlopeRun value="1"/>
+  <caretOffset value="0"/>
+  <reserved1 value="0"/>
+  <reserved2 value="0"/>
+  <reserved3 value="0"/>
+  <reserved4 value="0"/>
+  <metricDataFormat value="0"/>
+  <numberOfVMetrics value="1"/> <!-- Will be recalculated -->
+</vhea>

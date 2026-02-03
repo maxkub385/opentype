@@ -1,0 +1,10 @@
+A B C
+
+feature: abvs, lookup: 0, pos: 0
+A -> B
+> B B C
+
+feature: abvs, lookup: 0, pos: 1
+B -> C
+B > C C
+

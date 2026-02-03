@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Demo';
+    src: url('demo.ttf') format('truetype');
+}
+.demo {
+    font-feature-settings: "liga";
+	font-family: Demo;
+	font-size: 20px;
+}

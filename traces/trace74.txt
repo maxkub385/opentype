@@ -1,0 +1,6 @@
+A B C
+
+feature: liga, lookup: 0, pos: 0,1,2
+A B C -> S
+> S
+

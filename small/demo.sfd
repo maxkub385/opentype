@@ -1,0 +1,507 @@
+SplineFontDB: 3.2
+FontName: small
+FullName: small
+FamilyName: small
+Weight: Book
+Copyright: Copyright (c) 2023,
+Version: 001.000
+ItalicAngle: 0
+UnderlinePosition: -100
+UnderlineWidth: 50
+Ascent: 800
+Descent: 200
+InvalidEm: 0
+sfntRevision: 0x00010000
+LayerCount: 2
+Layer: 0 1 "Back" 1
+Layer: 1 1 "Fore" 0
+XUID: [1021 1018 -996177726 1309950]
+StyleMap: 0x0040
+FSType: 0
+OS2Version: 4
+OS2_WeightWidthSlopeOnly: 0
+OS2_UseTypoMetrics: 1
+CreationTime: 1703719242
+ModificationTime: 1704645071
+PfmFamily: 17
+TTFWeight: 400
+TTFWidth: 5
+LineGap: 90
+VLineGap: 0
+Panose: 2 0 5 3 0 0 0 0 0 0
+OS2TypoAscent: 800
+OS2TypoAOffset: 0
+OS2TypoDescent: -200
+OS2TypoDOffset: 0
+OS2TypoLinegap: 90
+OS2WinAscent: 763
+OS2WinAOffset: 0
+OS2WinDescent: 0
+OS2WinDOffset: 0
+HheadAscent: 763
+HheadAOffset: 0
+HheadDescent: 0
+HheadDOffset: 0
+OS2SubXSize: 650
+OS2SubYSize: 700
+OS2SubXOff: 0
+OS2SubYOff: 140
+OS2SupXSize: 650
+OS2SupYSize: 700
+OS2SupXOff: 0
+OS2SupYOff: 480
+OS2StrikeYSize: 49
+OS2StrikeYPos: 258
+OS2CapHeight: 753
+OS2Vendor: 'PfEd'
+OS2CodePages: 00000001.00000000
+OS2UnicodeRanges: 00000000.00000000.00000000.00800000
+Lookup: 5 0 0 "'ss01' Style Set 1 in Latin lookup 0" { "'ss01' Style Set 1 in Latin lookup 0 subtable"  } ['ss01' ('latn' <'dflt' > ) ]
+Lookup: 5 512 0 "Contextual Substitution lookup 1" { "Contextual Substitution lookup 1 subtable"  } []
+Lookup: 5 0 0 "'ss01' Style Set 1 in Latin lookup 2" { "'ss01' Style Set 1 in Latin lookup 2 subtable"  } ['ss01' ('latn' <'dflt' > ) ]
+Lookup: 1 0 0 "Single Substitution lookup 3" { "Single Substitution lookup 3 subtable"  } []
+Lookup: 2 0 0 "Multiple Substitution lookup 4" { "Multiple Substitution lookup 4 subtable"  } []
+Lookup: 4 0 0 "Ligature Substitution lookup 5" { "Ligature Substitution lookup 5 subtable"  } []
+Lookup: 1 2 0 "Single Substitution lookup 6" { "Single Substitution lookup 6 subtable"  } []
+Lookup: 8 16 0 "Reverse Contextual Chaining Substitution lookup 7" { "Reverse Contextual Chaining Substitution lookup 7 subtable"  } []
+Lookup: 6 16 0 "Contextual Chaining Substitution lookup 8" { "Contextual Chaining Substitution lookup 8 subtable"  } []
+Lookup: 6 0 0 "Contextual Chaining Substitution lookup 9" { "Contextual Chaining Substitution lookup 9 subtable"  } []
+Lookup: 6 0 0 "'pres' Pre Base Substitutions in Latin lookup 10" { "'pres' Pre Base Substitutions in Latin lookup 10 subtable"  } ['pres' ('latn' <'dflt' > ) ]
+Lookup: 5 0 0 "classbased" { "classbased-1"  } []
+MarkAttachClasses: 5
+"MarkClass-1" 0 
+"MarkClass-2" 0 
+"MarkClass-3" 0 
+"MarkClass-4" 7 A B C D
+MarkAttachSets: 1
+"MarkSet-0" 3 C D
+DEI: 91125
+ContextSub2: class "classbased-1" 3 3 3 3
+  Class: 3 A B
+  Class: 1 D
+  BClass: 3 A B
+  BClass: 1 D
+  FClass: 3 A B
+  FClass: 1 D
+ 3 0 0
+  ClsList: 1 2 1
+  BClsList:
+  FClsList:
+ 1
+  SeqLookup: 1 "Single Substitution lookup 6"
+ 1 0 0
+  ClsList: 0
+  BClsList:
+  FClsList:
+ 1
+  SeqLookup: 0 "Multiple Substitution lookup 4"
+ 1 0 0
+  ClsList: 2
+  BClsList:
+  FClsList:
+ 1
+  SeqLookup: 0 "Ligature Substitution lookup 5"
+  ClassNames: "All_Others" "X" "Y"
+  BClassNames: "All_Others" "X" "Y"
+  FClassNames: "All_Others" "X" "Y"
+EndFPST
+ChainSub2: coverage "'pres' Pre Base Substitutions in Latin lookup 10 subtable" 0 0 0 1
+ 2 0 0
+  Coverage: 1 D
+  Coverage: 1 D
+ 1
+  SeqLookup: 0 "Contextual Chaining Substitution lookup 9"
+EndFPST
+ChainSub2: coverage "Contextual Chaining Substitution lookup 9 subtable" 0 0 0 1
+ 2 0 0
+  Coverage: 1 D
+  Coverage: 1 D
+ 1
+  SeqLookup: 0 "Ligature Substitution lookup 5"
+EndFPST
+ChainSub2: coverage "Contextual Chaining Substitution lookup 8 subtable" 0 0 0 1
+ 2 0 0
+  Coverage: 1 D
+  Coverage: 1 D
+ 1
+  SeqLookup: 1 "Reverse Contextual Chaining Substitution lookup 7"
+EndFPST
+ReverseChain2: revcov "Reverse Contextual Chaining Substitution lookup 7 subtable" 0 0 0 1
+ 1 0 1
+  Coverage: 1 D
+  FCoverage: 1 D
+  Replace: 1 C
+EndFPST
+ContextSub2: glyph "'ss01' Style Set 1 in Latin lookup 2 subtable" 0 0 0 1
+ String: 1 A
+ BString: 0 
+ FString: 0 
+ 0
+EndFPST
+ContextSub2: class "Contextual Substitution lookup 1 subtable" 2 0 0 1
+  Class: 1 A
+ 1 0 0
+  ClsList: 1
+  BClsList:
+  FClsList:
+ 1
+  SeqLookup: 0 "Single Substitution lookup 3"
+  ClassNames: "0" "1"
+EndFPST
+ContextSub2: glyph "'ss01' Style Set 1 in Latin lookup 0 subtable" 0 0 0 1
+ String: 3 A A
+ BString: 0 
+ FString: 0 
+ 0
+EndFPST
+ShortTable: cvt  2
+  33
+  633
+EndShort
+ShortTable: maxp 16
+  1
+  0
+  7
+  76
+  3
+  0
+  0
+  2
+  0
+  1
+  1
+  0
+  64
+  46
+  0
+  0
+EndShort
+LangName: 1033 "" "" "Regular" "FontForge 2.0 : small : 5-1-2024" "" "Version 001.000"
+GaspTable: 1 65535 2 0
+Encoding: UnicodeBmp
+UnicodeInterp: none
+NameList: AGL For New Fonts
+DisplaySize: -48
+AntiAlias: 1
+FitToEm: 0
+WinInfo: 54 27 10
+BeginPrivate: 0
+EndPrivate
+BeginChars: 65539 7
+
+StartChar: .notdef
+Encoding: 65536 -1 0
+Width: 364
+Flags: W
+TtInstrs:
+PUSHB_2
+ 1
+ 0
+MDAP[rnd]
+ALIGNRP
+PUSHB_3
+ 7
+ 4
+ 0
+MIRP[min,rnd,black]
+SHP[rp2]
+PUSHB_2
+ 6
+ 5
+MDRP[rp0,min,rnd,grey]
+ALIGNRP
+PUSHB_3
+ 3
+ 2
+ 0
+MIRP[min,rnd,black]
+SHP[rp2]
+SVTCA[y-axis]
+PUSHB_2
+ 3
+ 0
+MDAP[rnd]
+ALIGNRP
+PUSHB_3
+ 5
+ 4
+ 0
+MIRP[min,rnd,black]
+SHP[rp2]
+PUSHB_3
+ 7
+ 6
+ 1
+MIRP[rp0,min,rnd,grey]
+ALIGNRP
+PUSHB_3
+ 1
+ 2
+ 0
+MIRP[min,rnd,black]
+SHP[rp2]
+EndTTInstrs
+LayerCount: 2
+Fore
+SplineSet
+33 0 m 1,0,-1
+ 33 666 l 1,1,-1
+ 298 666 l 1,2,-1
+ 298 0 l 1,3,-1
+ 33 0 l 1,0,-1
+66 33 m 1,4,-1
+ 265 33 l 1,5,-1
+ 265 633 l 1,6,-1
+ 66 633 l 1,7,-1
+ 66 33 l 1,4,-1
+EndSplineSet
+Validated: 1
+EndChar
+
+StartChar: .null
+Encoding: 65537 -1 1
+Width: 0
+GlyphClass: 2
+Flags: W
+LayerCount: 2
+Fore
+Validated: 1
+EndChar
+
+StartChar: nonmarkingreturn
+Encoding: 65538 -1 2
+Width: 333
+GlyphClass: 2
+Flags: W
+LayerCount: 2
+Fore
+Validated: 1
+EndChar
+
+StartChar: A
+Encoding: 65 65 3
+Width: 867
+GlyphClass: 2
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+36 64 m 1,0,-1
+ 43 94 l 1,1,2
+ 64 94 64 94 80 99 c 128,-1,3
+ 96 104 96 104 112 117.5 c 128,-1,4
+ 128 131 128 131 147.5 157.5 c 128,-1,5
+ 167 184 167 184 196 228 c 2,6,-1
+ 550 741 l 1,7,-1
+ 593 741 l 1,8,-1
+ 674 186 l 2,9,10
+ 679 160 679 160 685 143 c 128,-1,11
+ 691 126 691 126 700.5 115 c 128,-1,12
+ 710 104 710 104 725 99 c 128,-1,13
+ 740 94 740 94 763 94 c 1,14,-1
+ 757 64 l 1,15,-1
+ 484 64 l 1,16,-1
+ 490 94 l 1,17,18
+ 509 94 509 94 524 96 c 128,-1,19
+ 539 98 539 98 549.5 104.5 c 128,-1,20
+ 560 111 560 111 565.5 122.5 c 128,-1,21
+ 571 134 571 134 572 153 c 0,22,23
+ 572 165 572 165 571.5 176 c 128,-1,24
+ 571 187 571 187 570 196 c 2,25,-1
+ 560 288 l 1,26,-1
+ 295 288 l 1,27,-1
+ 224 180 l 2,28,29
+ 213 165 213 165 205.5 151 c 128,-1,30
+ 198 137 198 137 198 122 c 0,31,32
+ 198 106 198 106 211 100 c 128,-1,33
+ 224 94 224 94 257 94 c 1,34,-1
+ 250 64 l 1,35,-1
+ 36 64 l 1,0,-1
+522 625 m 1,36,-1
+ 518 625 l 1,37,-1
+ 320 329 l 1,38,-1
+ 555 329 l 1,39,-1
+ 522 625 l 1,36,-1
+EndSplineSet
+Validated: 1
+Substitution2: "Single Substitution lookup 6 subtable" A
+Ligature2: "Ligature Substitution lookup 5 subtable" D D
+MultipleSubs2: "Multiple Substitution lookup 4 subtable" B C
+Substitution2: "Single Substitution lookup 3 subtable" B
+EndChar
+
+StartChar: B
+Encoding: 66 66 4
+Width: 901
+GlyphClass: 4
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+302 639 m 2,0,1
+ 309 670 309 670 308.5 688.5 c 128,-1,2
+ 308 707 308 707 299 716.5 c 128,-1,3
+ 290 726 290 726 271.5 729 c 128,-1,4
+ 253 732 253 732 224 732 c 1,5,-1
+ 231 763 l 1,6,-1
+ 490 763 l 2,7,8
+ 555 763 555 763 597.5 753 c 128,-1,9
+ 640 743 640 743 666 724.5 c 128,-1,10
+ 692 706 692 706 702 682 c 128,-1,11
+ 712 658 712 658 712 630 c 0,12,13
+ 712 589 712 589 698 558.5 c 128,-1,14
+ 684 528 684 528 659.5 506 c 128,-1,15
+ 635 484 635 484 602 470 c 128,-1,16
+ 569 456 569 456 533 448 c 1,17,-1
+ 533 442 l 1,18,19
+ 563 438 563 438 589.5 428 c 128,-1,20
+ 616 418 616 418 636 400.5 c 128,-1,21
+ 656 383 656 383 667.5 358.5 c 128,-1,22
+ 679 334 679 334 680 302 c 0,23,24
+ 680 251 680 251 657.5 211.5 c 128,-1,25
+ 635 172 635 172 596 145 c 128,-1,26
+ 557 118 557 118 504.5 104 c 128,-1,27
+ 452 90 452 90 392 90 c 2,28,-1
+ 96 90 l 1,29,-1
+ 103 120 l 1,30,31
+ 132 120 132 120 151 123.5 c 128,-1,32
+ 170 127 170 127 182 137 c 128,-1,33
+ 194 147 194 147 201.5 166.5 c 128,-1,34
+ 209 186 209 186 216 218 c 2,35,-1
+ 302 639 l 2,0,1
+290 130 m 1,36,37
+ 299 130 299 130 306 129 c 128,-1,38
+ 313 128 313 128 321 128 c 0,39,40
+ 327 128 327 128 336 127 c 0,41,42
+ 343 127 343 127 352 127 c 0,43,44
+ 376 127 376 127 401.5 129.5 c 128,-1,45
+ 427 132 427 132 451.5 138 c 128,-1,46
+ 476 144 476 144 498 156 c 128,-1,47
+ 520 168 520 168 537 187 c 128,-1,48
+ 554 206 554 206 564 233.5 c 128,-1,49
+ 574 261 574 261 574 299 c 0,50,51
+ 574 335 574 335 560 357.5 c 128,-1,52
+ 546 380 546 380 523.5 394 c 128,-1,53
+ 501 408 501 408 471.5 414 c 128,-1,54
+ 442 420 442 420 409 420 c 2,55,-1
+ 348 420 l 1,56,-1
+ 290 130 l 1,36,37
+416 460 m 2,57,58
+ 469 460 469 460 506 471.5 c 128,-1,59
+ 543 483 543 483 566.5 504 c 128,-1,60
+ 590 525 590 525 600 555.5 c 128,-1,61
+ 610 586 610 586 610 624 c 0,62,63
+ 610 644 610 644 603 662.5 c 128,-1,64
+ 596 681 596 681 579 694.5 c 128,-1,65
+ 562 708 562 708 533 716 c 128,-1,66
+ 504 724 504 724 461 724 c 0,67,68
+ 454 724 454 724 448 724 c 0,69,70
+ 441 723 441 723 436 723 c 256,71,72
+ 431 723 431 723 424.5 722.5 c 128,-1,73
+ 418 722 418 722 410 721 c 1,74,-1
+ 357 460 l 1,75,-1
+ 416 460 l 2,57,58
+EndSplineSet
+Validated: 33
+EndChar
+
+StartChar: C
+Encoding: 67 67 5
+Width: 1047
+GlyphClass: 4
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+734 196 m 1,0,1
+ 708 166 708 166 678 140 c 128,-1,2
+ 648 114 648 114 613 95.5 c 128,-1,3
+ 578 77 578 77 537 66.5 c 128,-1,4
+ 496 56 496 56 448 56 c 0,5,6
+ 378 56 378 56 330 76 c 128,-1,7
+ 282 96 282 96 252.5 130.5 c 128,-1,8
+ 223 165 223 165 210 210.5 c 128,-1,9
+ 197 256 197 256 196 306 c 0,10,11
+ 196 378 196 378 211.5 439.5 c 128,-1,12
+ 227 501 227 501 254.5 550.5 c 128,-1,13
+ 282 600 282 600 319 638 c 128,-1,14
+ 356 676 356 676 400.5 701.5 c 128,-1,15
+ 445 727 445 727 495 740 c 128,-1,16
+ 545 753 545 753 597 753 c 0,17,18
+ 636 753 636 753 661 747 c 128,-1,19
+ 686 741 686 741 703.5 734 c 128,-1,20
+ 721 727 721 727 732 721 c 128,-1,21
+ 743 715 743 715 752 715 c 0,22,23
+ 765 715 765 715 774 725 c 128,-1,24
+ 783 735 783 735 796 752 c 1,25,-1
+ 825 752 l 1,26,-1
+ 777 518 l 1,27,-1
+ 744 518 l 1,28,29
+ 745 568 745 568 735 604.5 c 128,-1,30
+ 725 641 725 641 705 664 c 128,-1,31
+ 685 687 685 687 655.5 698 c 128,-1,32
+ 626 709 626 709 588 709 c 0,33,34
+ 529 709 529 709 476 681.5 c 128,-1,35
+ 423 654 423 654 383.5 605 c 128,-1,36
+ 344 556 344 556 320.5 486.5 c 128,-1,37
+ 297 417 297 417 297 332 c 0,38,39
+ 297 230 297 230 345.5 176 c 128,-1,40
+ 394 122 394 122 496 122 c 0,41,42
+ 556 122 556 122 610 145 c 128,-1,43
+ 664 168 664 168 716 216 c 1,44,-1
+ 734 196 l 1,0,1
+EndSplineSet
+Validated: 33
+EndChar
+
+StartChar: D
+Encoding: 68 68 6
+Width: 1060
+GlyphClass: 4
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+348 640 m 2,0,1
+ 354 668 354 668 352 684.5 c 128,-1,2
+ 350 701 350 701 341 710.5 c 128,-1,3
+ 332 720 332 720 314 723 c 128,-1,4
+ 296 726 296 726 268 726 c 1,5,-1
+ 274 756 l 1,6,-1
+ 540 756 l 2,7,8
+ 620 756 620 756 678.5 737 c 128,-1,9
+ 737 718 737 718 775 683.5 c 128,-1,10
+ 813 649 813 649 831.5 600 c 128,-1,11
+ 850 551 850 551 850 491 c 0,12,13
+ 850 383 850 383 816.5 305.5 c 128,-1,14
+ 783 228 783 228 723.5 179 c 128,-1,15
+ 664 130 664 130 581 107 c 128,-1,16
+ 498 84 498 84 400 84 c 2,17,-1
+ 140 84 l 1,18,-1
+ 146 114 l 1,19,20
+ 175 114 175 114 194.5 117.5 c 128,-1,21
+ 214 121 214 121 226 131 c 128,-1,22
+ 238 141 238 141 245.5 160.5 c 128,-1,23
+ 253 180 253 180 259 210 c 2,24,-1
+ 348 640 l 2,0,1
+334 126 m 1,25,26
+ 348 124 348 124 364 124 c 128,-1,27
+ 380 124 380 124 400 124 c 0,28,29
+ 483 124 483 124 547.5 144.5 c 128,-1,30
+ 612 165 612 165 656.5 208.5 c 128,-1,31
+ 701 252 701 252 724.5 319.5 c 128,-1,32
+ 748 387 748 387 748 482 c 0,33,34
+ 748 514 748 514 743.5 543 c 128,-1,35
+ 739 572 739 572 728 598 c 128,-1,36
+ 717 624 717 624 699 645.5 c 128,-1,37
+ 681 667 681 667 653.5 682.5 c 128,-1,38
+ 626 698 626 698 588 707 c 128,-1,39
+ 550 716 550 716 500 716 c 0,40,41
+ 486 716 486 716 477 715 c 128,-1,42
+ 468 714 468 714 454 712 c 1,43,-1
+ 334 126 l 1,25,26
+EndSplineSet
+Validated: 33
+EndChar
+EndChars
+EndSplineFont

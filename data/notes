@@ -1,0 +1,31 @@
+====================================
+
+Only capital letters
+
+capitals_cmap0.xml
+capitals_cmap0.xml
+capitals_glyf.xml
+capitals_name.xml
+
+====================================
+
+Unicode set (signs and controls)
+
+newgardiner_charset.xml
+
+====================================
+
+Unicode set (signs and controls, but missing NL glyphs)
+
+egyptian_charset.xml
+
+====================================
+
+Default values for general fonts
+
+standard_head.xml
+standard_hhea.xml
+standard_maxp.xml
+standard_os2.xml
+standard_post.xml
+standard_vhea.xml

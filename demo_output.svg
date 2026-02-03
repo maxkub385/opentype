@@ -1,0 +1,24 @@
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+<style>
+.glyph { fill: black; stroke: none; }
+.glyph-label { font-family: Arial; font-size: 12px; fill: blue; }
+.baseline { stroke: #ccc; stroke-width: 1; }
+.position-info { font-family: monospace; font-size: 10px; fill: green; }
+</style>
+<line x1="0" y1="150" x2="800" y2="150" class="baseline"/>
+<g transform="translate(50.0, 150.0) scale(0.1, -0.1)">
+<path d="M 36 64 L 43 94 L 64 94 L 96 104 L 128 131 L 167 184 L 196 228 L 550 741 L 593 741 L 674 186 L 679 160 L 691 126 L 710 104 L 740 94 L 763 94 L 757 64 L 484 64 L 490 94 L 509 94 L 539 98 L 560 111 L 571 134 L 572 153 L 572 165 L 571 187 L 570 196 L 560 288 L 295 288 L 224 180 L 213 165 L 198 137 L 198 122 L 198 106 L 224 94 L 257 94 L 250 64 Z M 522 625 L 518 625 L 320 329 L 555 329 Z" class="glyph"/>
+</g>
+<text x="50" y="170" class="glyph-label">A</text>
+<text x="50" y="185" class="position-info">(0, 0)</text>
+<g transform="translate(130.0, 150.0) scale(0.1, -0.1)">
+<path d="M 302 639 L 309 670 L 308 707 L 290 726 L 253 732 L 224 732 L 231 763 L 490 763 L 555 763 L 640 743 L 692 706 L 712 658 L 712 630 L 712 589 L 684 528 L 635 484 L 569 456 L 533 448 L 533 442 L 563 438 L 616 418 L 656 383 L 679 334 L 680 302 L 680 251 L 635 172 L 557 118 L 452 90 L 392 90 L 96 90 L 103 120 L 132 120 L 170 127 L 194 147 L 209 186 L 216 218 Z M 290 130 L 299 130 L 313 128 L 321 128 L 327 128 L 336 127 L 343 127 L 352 127 L 376 127 L 427 132 L 476 144 L 520 168 L 554 206 L 574 261 L 574 299 L 574 335 L 546 380 L 501 408 L 442 420 L 409 420 L 348 420 Z M 416 460 L 469 460 L 543 483 L 590 525 L 610 586 L 610 624 L 610 644 L 596 681 L 562 708 L 504 724 L 461 724 L 454 724 L 448 724 L 441 723 L 436 723 L 431 723 L 418 722 L 410 721 L 357 460 Z" class="glyph"/>
+</g>
+<text x="130" y="170" class="glyph-label">B</text>
+<text x="130" y="185" class="position-info">(0, 0)</text>
+<g transform="translate(210.0, 150.0) scale(0.1, -0.1)">
+<path d="M 734 196 L 708 166 L 648 114 L 578 77 L 496 56 L 448 56 L 378 56 L 282 96 L 223 165 L 197 256 L 196 306 L 196 378 L 227 501 L 282 600 L 356 676 L 445 727 L 545 753 L 597 753 L 636 753 L 686 741 L 721 727 L 743 715 L 752 715 L 765 715 L 783 735 L 796 752 L 825 752 L 777 518 L 744 518 L 745 568 L 725 641 L 685 687 L 626 709 L 588 709 L 529 709 L 423 654 L 344 556 L 297 417 L 297 332 L 297 230 L 394 122 L 496 122 L 556 122 L 664 168 L 716 216 Z" class="glyph"/>
+</g>
+<text x="210" y="170" class="glyph-label">C</text>
+<text x="210" y="185" class="position-info">(0, 0)</text>
+</svg>

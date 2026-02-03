@@ -1,0 +1,19 @@
+<hhea>
+  <tableVersion value="0x00010000"/>
+  <ascent value="1000"/>
+  <descent value="0"/>
+  <lineGap value="90"/>
+  <advanceWidthMax value="0"/> <!-- Will be recalculated -->
+  <minLeftSideBearing value="0"/> <!-- Will be recalculated -->
+  <minRightSideBearing value="0"/> <!-- Will be recalculated -->
+  <xMaxExtent value="0"/> <!-- Will be recalculated -->
+  <caretSlopeRise value="1"/>
+  <caretSlopeRun value="0"/>
+  <caretOffset value="0"/>
+  <reserved0 value="0"/>
+  <reserved1 value="0"/>
+  <reserved2 value="0"/>
+  <reserved3 value="0"/>
+  <metricDataFormat value="0"/>
+  <numberOfHMetrics value="1"/> <!-- Will be recalculated -->
+</hhea>

@@ -1,0 +1,52 @@
+# GDEF Mark Attachment Sets
+@MarkSet0=[\A \D ];
+@MarkSet1=[\A \B ];
+
+languagesystem latn dflt;
+
+
+# GSUB 
+
+
+lookup LigatureSubstitutionlookup0 {
+  lookupflag UseMarkFilteringSet @MarkSet0;
+    sub \A \D  by \C;
+} LigatureSubstitutionlookup0;
+
+lookup LigatureSubstitutionlookup1 {
+  lookupflag 0;
+    sub \B \B  by \D;
+} LigatureSubstitutionlookup1;
+
+lookup ligaStandardLigaturesinLatinlookup2 {
+  lookupflag UseMarkFilteringSet @MarkSet1;
+    sub [\A ]'lookup LigatureSubstitutionlookup0  [\B ]'lookup LigatureSubstitutionlookup0  ;
+} ligaStandardLigaturesinLatinlookup2;
+
+lookup ligaStandardLigaturesinLatinlookup3 {
+  lookupflag 0;
+    sub \A by \P ;
+    sub \B by \Q ;
+    sub \C by \R ;
+    sub \D by \S ;
+    sub \E by \T ;
+} ligaStandardLigaturesinLatinlookup3;
+
+feature liga {
+
+ script latn;
+     language dflt ;
+      lookup ligaStandardLigaturesinLatinlookup2;
+      lookup ligaStandardLigaturesinLatinlookup3;
+} liga;
+#Mark attachment classes (defined in GDEF, used in lookupflags)
+
+@GDEF_Simple = [\.null \nonmarkingreturn \F \G \H \I \J \K \L \M \N \O \P \Q \R \S \T \U \V \W 
+	\X \Y \Z ];
+@GDEF_Mark = [\A \B \C \D \E ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, , @GDEF_Mark, ;
+
+} GDEF;
+

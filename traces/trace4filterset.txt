@@ -1,0 +1,14 @@
+A X B Y D A Y B Y A B X B
+
+feature: liga, lookup: 0, pos: 0,2,4
+A B D -> B
+> B X Y A Y B Y A B X B
+
+feature: liga, lookup: 0, pos: 3,5
+A B -> S
+B X Y > S Y Y A B X B
+
+feature: liga, lookup: 0, pos: 6,7
+A B -> S
+B X Y S Y Y > S X B
+

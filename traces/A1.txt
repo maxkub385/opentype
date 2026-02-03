@@ -1,0 +1,286 @@
+A1
+
+feature: pres, lookup: 26, pos: 0
+ ['A1']  -> et56 tsh56454435332211 A1 Qf
+> et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 30/1212, pos: 0
+ ['et56']  -> Qi et56
+> Qi et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 39/1219, pos: 0
+ ['Qi']  -> Qi r0bA
+> Qi r0bA et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 42, pos: 5
+ ['Qf']  -> r0eA Qf
+Qi r0bA et56 tsh56454435332211 A1 > r0eA Qf
+
+feature: pres, lookup: 69, pos: 1
+ ['r0bA']  -> r0bA c0bA
+Qi > r0bA c0bA et56 tsh56454435332211 A1 r0eA Qf
+
+feature: pres, lookup: 69, pos: 6
+ ['r0eA']  -> c0eA r0eA
+Qi r0bA c0bA et56 tsh56454435332211 A1 > c0eA r0eA Qf
+
+feature: rlig, lookup: 83/1259, pos: 3
+ ['et56']  -> eh5 ev6
+Qi r0bA c0bA > eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 84, pos: 3
+ ['eh5']  -> eh5 im0
+Qi r0bA c0bA > eh5 im0 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 86, pos: 3
+ ['eh5', 'im0']  -> eh5
+Qi r0bA c0bA > eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 87, pos: 2
+ ['c0bA']  -> c0bA h0
+Qi r0bA > c0bA h0 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 94, pos: 3
+ ['h0']  -> h1
+Qi r0bA c0bA > h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 95, pos: 1
+ ['r0bA']  -> ch0 r0bA
+Qi > ch0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 95, pos: 5
+ ['eh5']  -> ch5 eh5
+Qi ch0 r0bA c0bA h1 > ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 99, pos: 1
+ ['ch0', 'ch5']  -> ch5
+Qi > ch5 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 101/1267, pos: 1
+ ['ch5']  -> ch5 rm5 dv0
+Qi > ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 102, pos: 0
+ ['Qi']  -> Qi rc0
+> Qi rc0 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 106, pos: 1
+ ['rc0', 'rm5']  -> rm5
+Qi > rm5 ch5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 107/1268, pos: 3
+ ['dv0']  -> rc0 dv0
+Qi rm5 ch5 > rc0 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 112/1273, pos: 3
+ ['rc0']  -> dv5
+Qi rm5 ch5 > dv5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 114/1275, pos: 3
+ ['dv5']  -> rm5
+Qi rm5 ch5 > rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 115/1276, pos: 1
+ ['rm5']  -> sh5
+Qi > sh5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 116, pos: 2
+ ['ch5', 'rm5', 'dv0']  -> dv0
+Qi sh5 > dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 123, pos: 6
+ ['eh5']  -> th5
+Qi sh5 dv0 r0bA c0bA h1 > th5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 139, pos: 6
+ ['th5']  -> eh5
+Qi sh5 dv0 r0bA c0bA h1 > eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 142, pos: 5
+ ['h1']  -> hn1
+Qi sh5 dv0 r0bA c0bA > hn1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 142, pos: 6
+ ['eh5']  -> en5
+Qi sh5 dv0 r0bA c0bA hn1 > en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 143, pos: 11
+ ['r0eA']  -> r0eA enb
+Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA > r0eA enb Qf
+
+feature: rlig, lookup: 169, pos: 5
+ ['hn1']  -> h1
+Qi sh5 dv0 r0bA c0bA > h1 en5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 169, pos: 6
+ ['en5']  -> eh5
+Qi sh5 dv0 r0bA c0bA h1 > eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 171, pos: 6
+ ['eh5']  -> sh5
+Qi sh5 dv0 r0bA c0bA h1 > sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 174, pos: 4
+ ['c0bA', 'h1']  -> c0bA
+Qi sh5 dv0 r0bA > c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 176, pos: 10
+ ['r0eA', 'enb']  -> r0eA
+Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA > r0eA Qf
+
+feature: rlig, lookup: 177, pos: 2
+ ['dv0', 'r0bA']  -> r0bA
+Qi sh5 > r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 180, pos: 2
+ ['r0bA']  -> r0bA v0
+Qi sh5 > r0bA v0 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 187, pos: 3
+ ['v0']  -> v1
+Qi sh5 r0bA > v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 188/1318, pos: 2
+ ['r0bA']  -> trg6 r0bA
+Qi sh5 > trg6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 189, pos: 3
+ ['r0bA']  -> cv0 r0bA
+Qi sh5 trg6 > cv0 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 189, pos: 8
+ ['ev6']  -> cv6 ev6
+Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 > cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 193, pos: 3
+ ['cv0', 'cv6']  -> cv6
+Qi sh5 trg6 > cv6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 194, pos: 3
+ ['cv6']  -> cv6 rm6
+Qi sh5 trg6 > cv6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 200, pos: 2
+ ['trg6', 'cv6']  -> dv0
+Qi sh5 > dv0 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 201, pos: 3
+ ['rm6']  -> th6
+Qi sh5 dv0 > th6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 225, pos: 3
+ ['th6']  -> rm6
+Qi sh5 dv0 > rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 226, pos: 2
+ ['dv0', 'rm6']  -> rm6
+Qi sh5 > rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 227, pos: 7
+ ['ev6']  -> rc0
+Qi sh5 rm6 r0bA v1 c0bA sh5 > rc0 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 228/1326, pos: 7
+ ['rc0']  -> ev6
+Qi sh5 rm6 r0bA v1 c0bA sh5 > ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 281, pos: 7
+ ['ev6']  -> sv6
+Qi sh5 rm6 r0bA v1 c0bA sh5 > sv6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 283, pos: 3
+ ['r0bA', 'v1']  -> r0bA
+Qi sh5 rm6 > r0bA c0bA sh5 sv6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 285, pos: 2
+ ['rm6', 'r0bA']  -> r0v6
+Qi sh5 > r0v6 c0bA sh5 sv6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 290, pos: 9
+ ['r0eA']  -> r0eB
+Qi sh5 r0v6 c0bA sh5 sv6 tsh56454435332211 A1 c0eA > r0eB Qf
+
+feature: blws, lookup: 308, pos: 3
+ ['c0bA']  -> c0bA imb
+Qi sh5 r0v6 > c0bA imb sh5 sv6 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 510, pos: 4
+ ['imb']  -> rc0
+Qi sh5 r0v6 c0bA > rc0 sh5 sv6 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 532, pos: 3
+ ['c0bA', 'rc0']  -> c0bA
+Qi sh5 r0v6 > c0bA sh5 sv6 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 611, pos: 3
+ ['c0bA']  -> cvb c0bA
+Qi sh5 r0v6 > cvb c0bA sh5 sv6 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 621, pos: 3
+ ['cvb', 'c0bA']  -> c0bA
+Qi sh5 r0v6 > c0bA sh5 sv6 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: psts, lookup: 1104, pos: 9
+ ['r0eB', 'Qf']  -> r0eB
+Qi sh5 r0v6 c0bA sh5 sv6 tsh56454435332211 A1 c0eA > r0eB
+
+feature: psts, lookup: 1113, pos: 0
+ ['Qi', 'sh5']  -> QB5
+> QB5 r0v6 c0bA sh5 sv6 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1114, pos: 3
+ ['sh5']  -> h5 sh5
+QB5 r0v6 c0bA > h5 sh5 sv6 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1115, pos: 2
+ ['c0bA', 'h5']  -> c0h5
+QB5 r0v6 > c0h5 sh5 sv6 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1131, pos: 3
+ ['sh5', 'sv6']  -> o56
+QB5 r0v6 c0h5 > o56 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1132/1946, pos: 3
+ ['o56']  -> o56 m0 t56
+QB5 r0v6 c0h5 > o56 m0 t56 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1147, pos: 5
+ ['t56', 'tsh56454435332211']  -> et56
+QB5 r0v6 c0h5 o56 m0 > et56 A1 c0eA r0eB
+
+feature: psts, lookup: 1149, pos: 5
+ ['et56', 'A1']  -> A1
+QB5 r0v6 c0h5 o56 m0 > A1 c0eA r0eB
+
+feature: mark, lookup: 0, pos: 1
+QB5 > r0v6(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o56 m0 A1 c0eA r0eB 
+
+feature: mkmk, lookup: 4, pos: 2
+QB5 r0v6(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+> c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o56 m0 A1 c0eA r0eB 
+
+feature: mkmk, lookup: 8, pos: 3
+QB5 r0v6(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+> o56(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0 A1 c0eA r0eB 
+
+feature: mkmk, lookup: 66, pos: 4
+QB5 r0v6(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o56(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+> m0(dict_items([('XCoordinate', 787), ('YCoordinate', -930)]))
+A1 c0eA r0eB 
+
+feature: mkmk, lookup: 67, pos: 5
+QB5 r0v6(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o56(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -930)]))
+> A1(dict_items([('XCoordinate', 0), ('YCoordinate', -930)]))
+c0eA r0eB 
+
+Shaped
+QB5(0, 0) r0v6(-1680, 1860) c0h5(-1680, 1860) o56(-1680, 1860) m0(-893, 930) A1(-893, 0) c0eA(-893, 0) r0eB(-893, 0) 

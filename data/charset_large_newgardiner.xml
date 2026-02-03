@@ -1,0 +1,97 @@
+<charset>
+  <map code="0x28" name="parenleft"/><!-- LEFT PARENTHESIS -->
+  <map code="0x29" name="parenright"/><!-- RIGHT PARENTHESIS -->
+  <map code="0x5b" name="bracketleft"/><!-- LEFT SQUARE BRACKET -->
+  <map code="0x5d" name="bracketright"/><!-- RIGHT SQUARE BRACKET -->
+  <map code="0x7b" name="braceleft"/><!-- LEFT CURLY BRACKET -->
+  <map code="0x7d" name="braceright"/><!-- RIGHT CURLY BRACKET -->
+  <map code="0x2329" name="angleleft"/><!-- LEFT-POINTING ANGLE BRACKET -->
+  <map code="0x232a" name="angleright"/><!-- RIGHT-POINTING ANGLE BRACKET -->
+  <map code="0x2e22" name="uni2E22"/><!-- TOP LEFT HALF BRACKET -->
+  <map code="0x2e23" name="uni2E23"/><!-- TOP RIGHT HALF BRACKET -->
+  <map code="0xe459" name="uniE459"/><!-- ???? -->
+  <map code="0xe45a" name="uniE45A"/><!-- ???? -->
+  <map code="0xe45b" name="uniE45B"/><!-- ???? -->
+  <map code="0xe45c" name="uniE45C"/><!-- ???? -->
+  <map code="0xe45d" name="uniE45D"/><!-- ???? -->
+  <map code="0xe45e" name="uniE45E"/><!-- ???? -->
+  <map code="0xe45f" name="uniE45F"/><!-- ???? -->
+  <map code="0xe460" name="uniE460"/><!-- ???? -->
+  <map code="0xe461" name="uniE461"/><!-- ???? -->
+  <map code="0xe462" name="uniE462"/><!-- ???? -->
+  <map code="0xe463" name="uniE463"/><!-- ???? -->
+  <map code="0xe464" name="uniE464"/><!-- ???? -->
+  <map code="0xe465" name="uniE465"/><!-- ???? -->
+  <map code="0xe466" name="uniE466"/><!-- ???? -->
+  <map code="0xe467" name="uniE467"/><!-- ???? -->
+  <map code="0xe468" name="uniE468"/><!-- ???? -->
+  <map code="0xe469" name="uniE469"/><!-- ???? -->
+  <map code="0xe46a" name="uniE46A"/><!-- ???? -->
+  <map code="0xe46b" name="uniE46B"/><!-- ???? -->
+  <map code="0xe46c" name="uniE46C"/><!-- ???? -->
+  <map code="0xe46d" name="uniE46D"/><!-- ???? -->
+  <map code="0xe46e" name="uniE46E"/><!-- ???? -->
+  <map code="0xe46f" name="uniE46F"/><!-- ???? -->
+  <map code="0xe470" name="uniE470"/><!-- ???? -->
+  <map code="0xe471" name="uniE471"/><!-- ???? -->
+  <map code="0xe472" name="uniE472"/><!-- ???? -->
+  <map code="0xe484" name="uniE484"/><!-- ???? -->
+  <map code="0xe485" name="uniE485"/><!-- ???? -->
+  <map code="0xe486" name="uniE486"/><!-- ???? -->
+  <map code="0xe487" name="uniE487"/><!-- ???? -->
+  <map code="0xe488" name="uniE488"/><!-- ???? -->
+  <map code="0xe489" name="uniE489"/><!-- ???? -->
+  <map code="0xe48a" name="uniE48A"/><!-- ???? -->
+  <map code="0xe48b" name="uniE48B"/><!-- ???? -->
+  <map code="0xe48c" name="uniE48C"/><!-- ???? -->
+  <map code="0xe48d" name="uniE48D"/><!-- ???? -->
+  <map code="0xe48e" name="uniE48E"/><!-- ???? -->
+  <map code="0xe48f" name="uniE48F"/><!-- ???? -->
+  <map code="0xe490" name="uniE490"/><!-- ???? -->
+  <map code="0xe491" name="uniE491"/><!-- ???? -->
+  <map code="0xe492" name="uniE492"/><!-- ???? -->
+  <map code="0xe493" name="uniE493"/><!-- ???? -->
+  <map code="0xe494" name="uniE494"/><!-- ???? -->
+  <map code="0xe495" name="uniE495"/><!-- ???? -->
+  <map code="0xe496" name="uniE496"/><!-- ???? -->
+  <map code="0xe497" name="uniE497"/><!-- ???? -->
+  <map code="0xe498" name="uniE498"/><!-- ???? -->
+  <map code="0xe499" name="uniE499"/><!-- ???? -->
+  <map code="0xe49a" name="uniE49A"/><!-- ???? -->
+  <map code="0xe49b" name="uniE49B"/><!-- ???? -->
+  <map code="0xe49c" name="uniE49C"/><!-- ???? -->
+  <map code="0xe49d" name="uniE49D"/><!-- ???? -->
+  <map code="0xe49e" name="uniE49E"/><!-- ???? -->
+  <map code="0xe49f" name="uniE49F"/><!-- ???? -->
+  <map code="0xe4a0" name="uniE4A0"/><!-- ???? -->
+  <map code="0xe4a1" name="uniE4A1"/><!-- ???? -->
+  <map code="0xe4a2" name="uniE4A2"/><!-- ???? -->
+  <map code="0xe4a3" name="uniE4A3"/><!-- ???? -->
+  <map code="0xe4a4" name="uniE4A4"/><!-- ???? -->
+  <map code="0xe4a5" name="uniE4A5"/><!-- ???? -->
+  <map code="0xe4a6" name="uniE4A6"/><!-- ???? -->
+  <map code="0xe4a7" name="uniE4A7"/><!-- ???? -->
+  <map code="0xe4a8" name="uniE4A8"/><!-- ???? -->
+  <map code="0xe4a9" name="uniE4A9"/><!-- ???? -->
+  <map code="0xe4aa" name="uniE4AA"/><!-- ???? -->
+  <map code="0xe4ab" name="uniE4AB"/><!-- ???? -->
+  <map code="0xe4ac" name="uniE4AC"/><!-- ???? -->
+  <map code="0xe4ad" name="uniE4AD"/><!-- ???? -->
+  <map code="0xe4ae" name="uniE4AE"/><!-- ???? -->
+  <map code="0xe500" name="uniE500"/><!-- ???? -->
+  <map code="0xe501" name="uniE501"/><!-- ???? -->
+  <map code="0xe502" name="uniE502"/><!-- ???? -->
+  <map code="0xe503" name="uniE503"/><!-- ???? -->
+  <map code="0xe504" name="uniE504"/><!-- ???? -->
+  <map code="0xe505" name="uniE505"/><!-- ???? -->
+  <map code="0xe506" name="uniE506"/><!-- ???? -->
+  <map code="0xe507" name="uniE507"/><!-- ???? -->
+  <map code="0xfe00" name="uniFE00"/><!-- VARIATION SELECTOR-1 -->
+  <map code="0xfe01" name="uniFE01"/><!-- VARIATION SELECTOR-2 -->
+  <map code="0xfe02" name="uniFE02"/><!-- VARIATION SELECTOR-3 -->
+  <map code="0xfe03" name="uniFE03"/><!-- VARIATION SELECTOR-4 -->
+  <map code="0xfe04" name="uniFE04"/><!-- VARIATION SELECTOR-5 -->
+  <map code="0xfe05" name="uniFE05"/><!-- VARIATION SELECTOR-6 -->
+  <map code="0xfe06" name="uniFE06"/><!-- VARIATION SELECTOR-7 -->
+  <map code="0xfffd" name="uniFFFD"/><!-- REPLACEMENT CHARACTER -->
+</charset>

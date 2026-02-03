@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="4.33">
+  <GlyphOrder>
+    <GlyphID id="0" name="A"/>
+    <GlyphID id="1" name="B"/>
+  </GlyphOrder>
+  <head>
+    <tableVersion value="1.0"/>
+  </head>
+  <hhea>
+    <ascent value="1422"/>
+  </hhea>
+  <maxp>
+    <tableVersion value="0x10000"/>
+    <numGlyphs value="2"/>
+  </maxp>
+  <OS_2>
+    <xAvgCharWidth value="1135"/>
+    <panose>
+      <bProportion value="0"/>
+    </panose>
+  </OS_2>
+  <hmtx>
+    <mtx name="A" width="200" lsb="800"/>
+    <mtx name="B" width="300" lsb="900"/>
+  </hmtx>
+  <cmap>
+    <tableVersion version="0"/>
+    <cmap_format_4 platformID="0" platEncID="3" language="0">
+      <map code="0x2046" name="RightLeftbracketquill"/>
+    </cmap_format_4>
+    <cmap_format_12 platformID="0" platEncID="4" format="12" reserved="0" length="1972" language="0" nGroups="163">
+      <map code="0x13000" name="A1"/>
+    </cmap_format_12>
+    <cmap_format_14 platformID="0" platEncID="5">
+      <map uv="0x13455" uvs="0xfe00" name="dq1234"/>
+    </cmap_format_14>
+    <cmap_format_6 platformID="1" platEncID="0" language="0">
+      <map code="0x22" name="quotedbl"/>
+    </cmap_format_6>
+    <cmap_format_4 platformID="3" platEncID="1" language="0">
+      <map code="0x2046" name="RightLeftbracketquill"/>
+    </cmap_format_4>
+    <cmap_format_12 platformID="3" platEncID="10" format="12" reserved="0" length="1972" language="0" nGroups="163">
+      <map code="0x13000" name="A1"/>
+    </cmap_format_12>
+  </cmap>
+  <loca/>
+  <glyf/>
+  <name>
+    <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">This is the text</namerecord>
+  </name>
+  <post>
+    <formatType value="2.0"/>
+    <psNames/>
+    <extraNames>
+      <psName name="tcbb"/>
+      <psName name="tcbe"/>
+    </extraNames>
+  </post>
+  <COLR>
+    <version value="0"/>
+    <ColorGlyph name="vj">
+      <layer colorID="1" name="c85"/>
+      <layer colorID="4" name="c92"/>
+    </ColorGlyph>
+  </COLR>
+  <CPAL>
+    <version value="1"/>
+    <numPaletteEntries value="2"/>
+    <palette index="0" type="2">
+      <color index="0" value="#252525FF"/>
+      <color index="1" value="#000000FF"/>
+    </palette>
+  </CPAL>
+  <GDEF>
+    <version value="0x00010002"/>
+    <GlyphClassDef>
+      <ClassDef glyph="zwnj" class="1"/>
+    </GlyphClassDef>
+    <LigCaretList>
+      <Coverage/>
+    </LigCaretList>
+    <MarkAttachClassDef>
+      <ClassDef glyph="c0bA" class="3"/>
+    </MarkAttachClassDef>
+    <MarkGlyphSetsDef>
+      <MarkSetTableFormat value="1"/>
+      <Coverage index="1">
+        <Glyph value="tcbb"/>
+        <Glyph value="ts"/>
+      </Coverage>
+    </MarkGlyphSetsDef>
+  </GDEF>
+  <GPOS>
+    <Version value="0x00010000"/>
+    <ScriptList>
+      <ScriptRecord index="0">
+        <ScriptTag value="egyp"/>
+        <Script>
+          <DefaultLangSys>
+            <ReqFeatureIndex value="65535"/>
+            <FeatureIndex index="0" value="0"/>
+          </DefaultLangSys>
+        </Script>
+      </ScriptRecord>
+    </ScriptList>
+    <FeatureList>
+      <FeatureRecord index="0">
+        <FeatureTag value="mkmk"/>
+        <Feature>
+          <LookupListIndex index="0" value="6"/>
+        </Feature>
+      </FeatureRecord>
+    </FeatureList>
+    <LookupList>
+      <Lookup index="910">
+        <LookupType value="9"/>
+        <LookupFlag value="0"/>
+        <ExtensionPos index="0" Format="1">
+          <ExtensionLookupType value="1"/>
+          <SinglePos Format="2">
+            <Coverage>
+              <Glyph value="it41"/>
+              <Glyph value="it41R"/>
+            </Coverage>
+            <ValueFormat value="2"/>
+            <Value index="0" YPlacement="94"/>
+            <Value index="1" YPlacement="95"/>
+          </SinglePos>
+        </ExtensionPos>
+      </Lookup>
+      <Lookup index="940">
+        <LookupType value="9"/>
+        <LookupFlag value="0"/>
+        <ExtensionPos index="0" Format="1">
+          <ExtensionLookupType value="4"/>
+          <MarkBasePos Format="1">
+            <MarkCoverage>
+              <Glyph value="m1"/>
+              <Glyph value="m2"/>
+            </MarkCoverage>
+            <BaseCoverage>
+              <Glyph value="b1"/>
+            </BaseCoverage>
+            <MarkArray>
+              <MarkRecord index="0">
+                <Class value="0"/>
+                <MarkAnchor Format="1">
+                  <XCoordinate value="0"/>
+                  <YCoordinate value="1"/>
+                </MarkAnchor>
+              </MarkRecord>
+              <MarkRecord index="1">
+                <Class value="1"/>
+                <MarkAnchor Format="1">
+                  <XCoordinate value="2"/>
+                  <YCoordinate value="3"/>
+                </MarkAnchor>
+              </MarkRecord>
+              <BaseRecord index="0">
+                <BaseAnchor index="0" Format="1">
+                  <XCoordinate value="4"/>
+                  <YCoordinate value="5"/>
+                </BaseAnchor>
+                <BaseAnchor index="1" Format="1">
+                  <XCoordinate value="6"/>
+                  <YCoordinate value="7"/>
+                </BaseAnchor>
+              </BaseRecord>
+            </MarkArray>
+            <BaseArray/>
+          </MarkBasePos>
+        </ExtensionPos>
+      </Lookup>
+      <Lookup index="960">
+        <LookupType value="9"/>
+        <LookupFlag value="0"/>
+        <ExtensionPos index="0" Format="1">
+          <ExtensionLookupType value="6"/>
+          <MarkMarkPos Format="1">
+            <Mark1Coverage>
+              <Glyph value="m1"/>
+              <Glyph value="m2"/>
+            </Mark1Coverage>
+            <Mark2Coverage>
+              <Glyph value="m2"/>
+            </Mark2Coverage>
+            <Mark1Array>
+              <MarkRecord index="0">
+                <Class value="0"/>
+                <MarkAnchor Format="1">
+                  <XCoordinate value="0"/>
+                  <YCoordinate value="1"/>
+                </MarkAnchor>
+              </MarkRecord>
+              <MarkRecord index="1">
+                <Class value="1"/>
+                <MarkAnchor Format="1">
+                  <XCoordinate value="2"/>
+                  <YCoordinate value="3"/>
+                </MarkAnchor>
+              </MarkRecord>
+            </Mark1Array>
+            <Mark2Array>
+              <Mark2Record index="0">
+                <Mark2Anchor index="0" Format="1">
+                  <XCoordinate value="4"/>
+                  <YCoordinate value="5"/>
+                </Mark2Anchor>
+                <Mark2Anchor index="1" Format="1">
+                  <XCoordinate value="6"/>
+                  <YCoordinate value="7"/>
+                </Mark2Anchor>
+              </Mark2Record>
+            </Mark2Array>
+          </MarkMarkPos>
+        </ExtensionPos>
+      </Lookup>
+      <Lookup index="980">
+        <LookupType value="9"/>
+        <LookupFlag value="16"/>
+        <ExtensionPos index="0" Format="1">
+          <ExtensionLookupType value="8"/>
+          <ChainContextPos Format="3">
+            <BacktrackCoverage index="0">
+              <Glyph value="c0s0p25"/>
+              <Glyph value="c0s0p33"/>
+            </BacktrackCoverage>
+            <BacktrackCoverage index="1">
+              <Glyph value="c0s0p5"/>
+              <Glyph value="c0s0p66"/>
+            </BacktrackCoverage>
+            <InputCoverage index="0">
+              <Glyph value="c0h1"/>
+              <Glyph value="c0h2"/>
+            </InputCoverage>
+            <LookAheadCoverage index="&lt;Element LookAheadCoverage at 0x7f2d26bbc680&gt;">
+              <Glyph value="c0h4"/>
+              <Glyph value="c0h5"/>
+            </LookAheadCoverage>
+            <LookAheadCoverage index="&lt;Element LookAheadCoverage at 0x7f2d26bbc400&gt;">
+              <Glyph value="c0h6"/>
+              <Glyph value="c0h7"/>
+            </LookAheadCoverage>
+            <PosLookupRecord index="0">
+              <SequenceIndex value="0"/>
+              <LookupListIndex value="123"/>
+            </PosLookupRecord>
+          </ChainContextPos>
+        </ExtensionPos>
+        <MarkFilteringSet value="456"/>
+      </Lookup>
+    </LookupList>
+  </GPOS>
+  <GSUB>
+    <Version value="0x00010000"/>
+    <ScriptList>
+      <ScriptRecord index="0">
+        <ScriptTag value="egyp"/>
+        <Script>
+          <DefaultLangSys>
+            <ReqFeatureIndex value="65535"/>
+            <FeatureIndex index="0" value="0"/>
+            <FeatureIndex index="1" value="1"/>
+          </DefaultLangSys>
+        </Script>
+      </ScriptRecord>
+    </ScriptList>
+    <FeatureList>
+      <FeatureRecord index="0">
+        <FeatureTag value="pres"/>
+        <Feature>
+          <LookupListIndex index="0" value="3"/>
+        </Feature>
+      </FeatureRecord>
+      <FeatureRecord index="1">
+        <FeatureTag value="ss01"/>
+        <Feature>
+          <LookupListIndex index="0" value="6"/>
+        </Feature>
+      </FeatureRecord>
+    </FeatureList>
+    <LookupList>
+      <Lookup index="10">
+        <LookupType value="7"/>
+        <LookupFlag value="0"/>
+        <SingleSubst>
+          <Substitution in="a" out="b"/>
+          <Substitution in="a" out="b"/>
+        </SingleSubst>
+      </Lookup>
+      <Lookup index="10">
+        <LookupType value="7"/>
+        <LookupFlag value="0"/>
+        <ExtensionSubst index="0" Format="1">
+          <ExtensionLookupType value="1"/>
+          <SingleSubst>
+            <Substitution in="a" out="b"/>
+            <Substitution in="a" out="b"/>
+          </SingleSubst>
+        </ExtensionSubst>
+      </Lookup>
+      <Lookup index="20">
+        <LookupType value="7"/>
+        <LookupFlag value="0"/>
+        <ExtensionSubst index="0" Format="1">
+          <ExtensionLookupType value="2"/>
+          <MultipleSubst>
+            <Substitution in="A1" out="et56,tsh56454435332211,A1,Qf"/>
+            <Substitution in="A11" out="et66,tsh665544332211,A10,Qf"/>
+          </MultipleSubst>
+        </ExtensionSubst>
+      </Lookup>
+      <Lookup index="30">
+        <LookupType value="7"/>
+        <LookupFlag value="0"/>
+        <ExtensionSubst index="0" Format="1">
+          <ExtensionLookupType value="4"/>
+          <LigatureSubst>
+            <LigatureSet glyph="Qf">
+              <Ligature components="mr" glyph="mr"/>
+              <Ligature components="dq1" glyph="dq1"/>
+            </LigatureSet>
+          </LigatureSubst>
+        </ExtensionSubst>
+      </Lookup>
+      <Lookup index="60">
+        <LookupType value="7"/>
+        <LookupFlag value="512"/>
+        <ExtensionSubst index="0" Format="1">
+          <ExtensionLookupType value="6"/>
+          <ChainContextSubst Format="3">
+            <BacktrackCoverage index="0">
+              <Glyph value="pre1"/>
+            </BacktrackCoverage>
+            <BacktrackCoverage index="1">
+              <Glyph value="pre2"/>
+            </BacktrackCoverage>
+            <InputCoverage index="0">
+              <Glyph value="Qf"/>
+            </InputCoverage>
+            <InputCoverage index="1">
+              <Glyph value="mr"/>
+            </InputCoverage>
+          </ChainContextSubst>
+        </ExtensionSubst>
+        <ExtensionSubst index="1" Format="1">
+          <ExtensionLookupType value="6"/>
+          <ChainContextSubst Format="3">
+            <InputCoverage index="0">
+              <Glyph value="Qf"/>
+            </InputCoverage>
+            <InputCoverage index="1">
+              <Glyph value="dq1"/>
+            </InputCoverage>
+            <LookAheadCoverage index="0">
+              <Glyph value="post1"/>
+              <Glyph value="post2"/>
+            </LookAheadCoverage>
+            <LookAheadCoverage index="1">
+              <Glyph value="post3"/>
+            </LookAheadCoverage>
+            <SubstLookupRecord index="0">
+              <SequenceIndex value="0"/>
+              <LookupListIndex value="30"/>
+            </SubstLookupRecord>
+          </ChainContextSubst>
+        </ExtensionSubst>
+      </Lookup>
+    </LookupList>
+  </GSUB>
+  <vhea>
+    <ascent value="1035"/>
+  </vhea>
+  <vmtx>
+    <mtx name="A" height="400" tsb="600"/>
+    <mtx name="B" height="500" tsb="700"/>
+  </vmtx>
+  <DSIG>
+    <tableHeader flag="0x1" numSigs="0" version="1"/>
+  </DSIG>
+</ttFont>

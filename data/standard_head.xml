@@ -1,0 +1,20 @@
+<head>
+  <!-- Most of this table will be recalculated by the compiler -->
+  <tableVersion value="1.0"/>
+  <fontRevision value="1.0"/>
+  <checkSumAdjustment value="0x1f641a7b"/> <!-- Will be recalculated -->
+  <magicNumber value="0x5f0f3cf5"/>
+  <flags value="00000000 00001011"/> <!-- Will be recalculated -->
+  <unitsPerEm value="1000"/>
+  <created value="Wed Dec 27 23:20:42 2023"/>
+  <modified value="Fri Dec 29 11:07:36 2023"/>
+  <xMin value="0"/> <!-- Will be recalculated -->
+  <yMin value="0"/> <!-- Will be recalculated -->
+  <xMax value="0"/> <!-- Will be recalculated -->
+  <yMax value="0"/> <!-- Will be recalculated -->
+  <macStyle value="00000000 00000000"/>
+  <lowestRecPPEM value="8"/>
+  <fontDirectionHint value="2"/>
+  <indexToLocFormat value="0"/>
+  <glyphDataFormat value="0"/>
+</head>

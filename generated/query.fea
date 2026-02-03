@@ -1,0 +1,24 @@
+Semantics of Chained Contexts Substitution in OpenType font
+
+@MarkSet0=[\A \D];
+@MarkSet1=[\A \B];
+
+lookup Lookup0 {
+  lookupflag UseMarkFilteringSet @MarkSet0;
+    sub \A \D by \C;
+} Lookup0;
+
+lookup Lookup1 {
+  lookupflag 0;
+    sub \B \B by \D;
+} Lookup1;
+
+lookup ligaLookup2 {
+  lookupflag UseMarkFilteringSet @MarkSet1;
+    sub [\A]'lookup Lookup0 [\B]'lookup Lookup1;
+} ligaLookup2;
+
+ABBD -> CD
+
+ABBD -> CBB
+ABBE -> ADE

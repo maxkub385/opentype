@@ -1,0 +1,6 @@
+A A A
+
+feature: liga, lookup: 1/0, pos: 0,1
+|A A| ---> 0->0
+> B A
+

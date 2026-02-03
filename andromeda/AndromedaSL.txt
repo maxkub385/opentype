@@ -1,0 +1,18 @@
+
+Andromeda SL
+============
+
+Free OpenType font 
+from Silesian Letters
+http://www.silesian.com/
+
+Copyright (c) 1997-2006 by Adam Twardoch for Silesian Letters. The
+Andromeda SL font may be distributed in original form and used free of
+charge for any purpose. Modifications require author's permission. All
+rights reserved.
+
+The font Andromeda SL was inspired by a 1970's-like logo design for
+the "Andromeda" cinema in Tychy, Poland. Font includes the "Andromeda"
+logo at the trademark character. Font contains accented characters for
+many Western and Central European languages.
+

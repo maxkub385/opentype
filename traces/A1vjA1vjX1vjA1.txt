@@ -1,0 +1,1437 @@
+A1 vj A1 vj X1 vj A1
+
+feature: pres, lookup: 22, pos: 1
+ ['vj']  -> vj0A
+A1 > vj0A A1 vj X1 vj A1
+
+feature: pres, lookup: 22, pos: 3
+ ['vj']  -> vj0A
+A1 vj0A A1 > vj0A X1 vj A1
+
+feature: pres, lookup: 22, pos: 5
+ ['vj']  -> vj0A
+A1 vj0A A1 vj0A X1 > vj0A A1
+
+feature: pres, lookup: 26, pos: 0
+ ['A1']  -> et56 tsh56454435332211 A1 Qf
+> et56 tsh56454435332211 A1 Qf vj0A A1 vj0A X1 vj0A A1
+
+feature: pres, lookup: 26, pos: 5
+ ['A1']  -> et56 tsh56454435332211 A1 Qf
+et56 tsh56454435332211 A1 Qf vj0A > et56 tsh56454435332211 A1 Qf vj0A X1 vj0A A1
+
+feature: pres, lookup: 26, pos: 10
+ ['X1']  -> et32 tsh32312111 X1 Qf
+et56 tsh56454435332211 A1 Qf vj0A et56 tsh56454435332211 A1 Qf vj0A > et32 tsh32312111 X1 Qf vj0A A1
+
+feature: pres, lookup: 26, pos: 15
+ ['A1']  -> et56 tsh56454435332211 A1 Qf
+et56 tsh56454435332211 A1 Qf vj0A et56 tsh56454435332211 A1 Qf vj0A et32 tsh32312111 X1 Qf vj0A > et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 30/1212, pos: 0
+ ['et56']  -> Qi et56
+> Qi et56 tsh56454435332211 A1 Qf vj0A et56 tsh56454435332211 A1 Qf vj0A et32 tsh32312111 X1 Qf vj0A et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 30/1212, pos: 6
+ ['et56']  -> Qi et56
+Qi et56 tsh56454435332211 A1 Qf vj0A > Qi et56 tsh56454435332211 A1 Qf vj0A et32 tsh32312111 X1 Qf vj0A et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 30/1212, pos: 12
+ ['et32']  -> Qi et32
+Qi et56 tsh56454435332211 A1 Qf vj0A Qi et56 tsh56454435332211 A1 Qf vj0A > Qi et32 tsh32312111 X1 Qf vj0A et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 30/1212, pos: 18
+ ['et56']  -> Qi et56
+Qi et56 tsh56454435332211 A1 Qf vj0A Qi et56 tsh56454435332211 A1 Qf vj0A Qi et32 tsh32312111 X1 Qf vj0A > Qi et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 33, pos: 5
+ [['ss', 'hj0A', 'hj1A', 'hj2A', 'vj0A', 'vj1A', 'vj2A', 'bi0A', 'ibe0A', 'ibs0A', 'ite0A', 'its0A', 'mi0A', 'om0A', 'ti0A', 'bi1A', 'ibe1A', 'ibs1A', 'ite1A', 'its1A', 'mi1A', 'om1A', 'ti1A']] ss/Qi -> None
+Qi et56 tsh56454435332211 A1 Qf > Qi et56 tsh56454435332211 A1 Qf vj0A Qi et32 tsh32312111 X1 Qf vj0A Qi et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 33, pos: 10
+ [['ss', 'hj0A', 'hj1A', 'hj2A', 'vj0A', 'vj1A', 'vj2A', 'bi0A', 'ibe0A', 'ibs0A', 'ite0A', 'its0A', 'mi0A', 'om0A', 'ti0A', 'bi1A', 'ibe1A', 'ibs1A', 'ite1A', 'its1A', 'mi1A', 'om1A', 'ti1A']] ss/Qi -> None
+Qi et56 tsh56454435332211 A1 Qf Qi et56 tsh56454435332211 A1 Qf > Qi et32 tsh32312111 X1 Qf vj0A Qi et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 33, pos: 15
+ [['ss', 'hj0A', 'hj1A', 'hj2A', 'vj0A', 'vj1A', 'vj2A', 'bi0A', 'ibe0A', 'ibs0A', 'ite0A', 'its0A', 'mi0A', 'om0A', 'ti0A', 'bi1A', 'ibe1A', 'ibs1A', 'ite1A', 'its1A', 'mi1A', 'om1A', 'ti1A']] ss/Qi -> None
+Qi et56 tsh56454435332211 A1 Qf Qi et56 tsh56454435332211 A1 Qf Qi et32 tsh32312111 X1 Qf > Qi et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 39/1219, pos: 0
+ ['Qi']  -> Qi r0bA
+> Qi r0bA et56 tsh56454435332211 A1 Qf Qi et56 tsh56454435332211 A1 Qf Qi et32 tsh32312111 X1 Qf Qi et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 39/1219, pos: 6
+ ['Qi']  -> Qi r0bA
+Qi r0bA et56 tsh56454435332211 A1 Qf > Qi r0bA et56 tsh56454435332211 A1 Qf Qi et32 tsh32312111 X1 Qf Qi et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 39/1219, pos: 12
+ ['Qi']  -> Qi r0bA
+Qi r0bA et56 tsh56454435332211 A1 Qf Qi r0bA et56 tsh56454435332211 A1 Qf > Qi r0bA et32 tsh32312111 X1 Qf Qi et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 39/1219, pos: 18
+ ['Qi']  -> Qi r0bA
+Qi r0bA et56 tsh56454435332211 A1 Qf Qi r0bA et56 tsh56454435332211 A1 Qf Qi r0bA et32 tsh32312111 X1 Qf > Qi r0bA et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 42, pos: 5
+ ['Qf']  -> r0eA Qf
+Qi r0bA et56 tsh56454435332211 A1 > r0eA Qf Qi r0bA et56 tsh56454435332211 A1 Qf Qi r0bA et32 tsh32312111 X1 Qf Qi r0bA et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 42, pos: 12
+ ['Qf']  -> r0eA Qf
+Qi r0bA et56 tsh56454435332211 A1 r0eA Qf Qi r0bA et56 tsh56454435332211 A1 > r0eA Qf Qi r0bA et32 tsh32312111 X1 Qf Qi r0bA et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 42, pos: 19
+ ['Qf']  -> r0eA Qf
+Qi r0bA et56 tsh56454435332211 A1 r0eA Qf Qi r0bA et56 tsh56454435332211 A1 r0eA Qf Qi r0bA et32 tsh32312111 X1 > r0eA Qf Qi r0bA et56 tsh56454435332211 A1 Qf
+
+feature: pres, lookup: 42, pos: 26
+ ['Qf']  -> r0eA Qf
+Qi r0bA et56 tsh56454435332211 A1 r0eA Qf Qi r0bA et56 tsh56454435332211 A1 r0eA Qf Qi r0bA et32 tsh32312111 X1 r0eA Qf Qi r0bA et56 tsh56454435332211 A1 > r0eA Qf
+
+feature: pres, lookup: 69, pos: 1
+ ['r0bA']  -> r0bA c0bA
+Qi > r0bA c0bA et56 tsh56454435332211 A1 r0eA Qf Qi r0bA et56 tsh56454435332211 A1 r0eA Qf Qi r0bA et32 tsh32312111 X1 r0eA Qf Qi r0bA et56 tsh56454435332211 A1 r0eA Qf
+
+feature: pres, lookup: 69, pos: 6
+ ['r0eA']  -> c0eA r0eA
+Qi r0bA c0bA et56 tsh56454435332211 A1 > c0eA r0eA Qf Qi r0bA et56 tsh56454435332211 A1 r0eA Qf Qi r0bA et32 tsh32312111 X1 r0eA Qf Qi r0bA et56 tsh56454435332211 A1 r0eA Qf
+
+feature: pres, lookup: 69, pos: 10
+ ['r0bA']  -> r0bA c0bA
+Qi r0bA c0bA et56 tsh56454435332211 A1 c0eA r0eA Qf Qi > r0bA c0bA et56 tsh56454435332211 A1 r0eA Qf Qi r0bA et32 tsh32312111 X1 r0eA Qf Qi r0bA et56 tsh56454435332211 A1 r0eA Qf
+
+feature: pres, lookup: 69, pos: 15
+ ['r0eA']  -> c0eA r0eA
+Qi r0bA c0bA et56 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA et56 tsh56454435332211 A1 > c0eA r0eA Qf Qi r0bA et32 tsh32312111 X1 r0eA Qf Qi r0bA et56 tsh56454435332211 A1 r0eA Qf
+
+feature: pres, lookup: 69, pos: 19
+ ['r0bA']  -> r0bA c0bA
+Qi r0bA c0bA et56 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA et56 tsh56454435332211 A1 c0eA r0eA Qf Qi > r0bA c0bA et32 tsh32312111 X1 r0eA Qf Qi r0bA et56 tsh56454435332211 A1 r0eA Qf
+
+feature: pres, lookup: 69, pos: 24
+ ['r0eA']  -> c0eA r0eA
+Qi r0bA c0bA et56 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA et56 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA et32 tsh32312111 X1 > c0eA r0eA Qf Qi r0bA et56 tsh56454435332211 A1 r0eA Qf
+
+feature: pres, lookup: 69, pos: 28
+ ['r0bA']  -> r0bA c0bA
+Qi r0bA c0bA et56 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA et56 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA et32 tsh32312111 X1 c0eA r0eA Qf Qi > r0bA c0bA et56 tsh56454435332211 A1 r0eA Qf
+
+feature: pres, lookup: 69, pos: 33
+ ['r0eA']  -> c0eA r0eA
+Qi r0bA c0bA et56 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA et56 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA et32 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA et56 tsh56454435332211 A1 > c0eA r0eA Qf
+
+feature: rlig, lookup: 83/1259, pos: 3
+ ['et56']  -> eh5 ev6
+Qi r0bA c0bA > eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA et56 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA et32 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA et56 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 83/1259, pos: 13
+ ['et56']  -> eh5 ev6
+Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA > eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA et32 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA et56 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 83/1259, pos: 23
+ ['et32']  -> eh3 ev2
+Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA > eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA et56 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 83/1259, pos: 33
+ ['et56']  -> eh5 ev6
+Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA > eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 84, pos: 3
+ ['eh5']  -> eh5 im0
+Qi r0bA c0bA > eh5 im0 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 84, pos: 14
+ ['eh5']  -> eh5 im0
+Qi r0bA c0bA eh5 im0 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA > eh5 im0 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 84, pos: 25
+ ['eh3']  -> eh3 im0
+Qi r0bA c0bA eh5 im0 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh5 im0 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA > eh3 im0 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 84, pos: 36
+ ['eh5']  -> eh5 im0
+Qi r0bA c0bA eh5 im0 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh5 im0 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh3 im0 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA > eh5 im0 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 86, pos: 3,4
+ ['eh5', 'im0']  -> eh5
+Qi r0bA c0bA > eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh5 im0 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh3 im0 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA eh5 im0 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 86, pos: 13,14
+ ['eh5', 'im0']  -> eh5
+Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA > eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh3 im0 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA eh5 im0 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 86, pos: 23,24
+ ['eh3', 'im0']  -> eh3
+Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA > eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA eh5 im0 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 86, pos: 33,34
+ ['eh5', 'im0']  -> eh5
+Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA > eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 87, pos: 2
+ ['c0bA']  -> c0bA h0
+Qi r0bA > c0bA h0 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 87, pos: 13
+ ['c0bA']  -> c0bA h0
+Qi r0bA c0bA h0 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA > c0bA h0 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 87, pos: 24
+ ['c0bA']  -> c0bA h0
+Qi r0bA c0bA h0 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA h0 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA > c0bA h0 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 87, pos: 35
+ ['c0bA']  -> c0bA h0
+Qi r0bA c0bA h0 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA h0 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA h0 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA > c0bA h0 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 94, pos: 3
+ ['h0']  -> h1
+Qi r0bA c0bA > h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA h0 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA h0 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA h0 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 94, pos: 14
+ ['h0']  -> h1
+Qi r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA > h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA h0 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA h0 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 94, pos: 25
+ ['h0']  -> h1
+Qi r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA > h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA h0 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 94, pos: 36
+ ['h0']  -> h1
+Qi r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA > h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 95, pos: 1
+ ['r0bA']  -> ch0 r0bA
+Qi > ch0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 95, pos: 5
+ ['eh5']  -> ch5 eh5
+Qi ch0 r0bA c0bA h1 > ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 95, pos: 14
+ ['r0bA']  -> ch0 r0bA
+Qi ch0 r0bA c0bA h1 ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi > ch0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 95, pos: 18
+ ['eh5']  -> ch5 eh5
+Qi ch0 r0bA c0bA h1 ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch0 r0bA c0bA h1 > ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 95, pos: 27
+ ['r0bA']  -> ch0 r0bA
+Qi ch0 r0bA c0bA h1 ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch0 r0bA c0bA h1 ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi > ch0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 95, pos: 31
+ ['eh3']  -> ch3 eh3
+Qi ch0 r0bA c0bA h1 ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch0 r0bA c0bA h1 ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch0 r0bA c0bA h1 > ch3 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 95, pos: 40
+ ['r0bA']  -> ch0 r0bA
+Qi ch0 r0bA c0bA h1 ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch0 r0bA c0bA h1 ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch0 r0bA c0bA h1 ch3 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi > ch0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 95, pos: 44
+ ['eh5']  -> ch5 eh5
+Qi ch0 r0bA c0bA h1 ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch0 r0bA c0bA h1 ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch0 r0bA c0bA h1 ch3 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi ch0 r0bA c0bA h1 > ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 99, pos: 1,5
+ ['ch0', 'ch5']  -> ch5
+Qi > ch5 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch0 r0bA c0bA h1 ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch0 r0bA c0bA h1 ch3 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi ch0 r0bA c0bA h1 ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 99, pos: 13,17
+ ['ch0', 'ch5']  -> ch5
+Qi ch5 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi > ch5 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch0 r0bA c0bA h1 ch3 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi ch0 r0bA c0bA h1 ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 99, pos: 25,29
+ ['ch0', 'ch3']  -> ch3
+Qi ch5 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch5 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi > ch3 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi ch0 r0bA c0bA h1 ch5 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 99, pos: 37,41
+ ['ch0', 'ch5']  -> ch5
+Qi ch5 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch5 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch3 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi > ch5 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 101/1267, pos: 1
+ ['ch5']  -> ch5 rm5 dv0
+Qi > ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch5 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch3 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi ch5 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 101/1267, pos: 15
+ ['ch5']  -> ch5 rm5 dv0
+Qi ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi > ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch3 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi ch5 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 101/1267, pos: 29
+ ['ch3']  -> ch3 rm3 dv0
+Qi ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi > ch3 rm3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi ch5 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 101/1267, pos: 43
+ ['ch5']  -> ch5 rm5 dv0
+Qi ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch3 rm3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi > ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 102, pos: 0
+ ['Qi']  -> Qi rc0
+> Qi rc0 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch3 rm3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 102, pos: 15
+ ['Qi']  -> Qi rc0
+Qi rc0 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf > Qi rc0 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi ch3 rm3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 102, pos: 30
+ ['Qi']  -> Qi rc0
+Qi rc0 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rc0 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf > Qi rc0 ch3 rm3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 102, pos: 45
+ ['Qi']  -> Qi rc0
+Qi rc0 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rc0 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rc0 ch3 rm3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf > Qi rc0 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 106, pos: 1,3
+ ['rc0', 'rm5']  -> rm5
+Qi > rm5 ch5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rc0 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rc0 ch3 rm3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rc0 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 106, pos: 15,17
+ ['rc0', 'rm5']  -> rm5
+Qi rm5 ch5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi > rm5 ch5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rc0 ch3 rm3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rc0 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 106, pos: 29,31
+ ['rc0', 'rm3']  -> rm3
+Qi rm5 ch5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm5 ch5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi > rm3 ch3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rc0 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 106, pos: 43,45
+ ['rc0', 'rm5']  -> rm5
+Qi rm5 ch5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm5 ch5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm3 ch3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi > rm5 ch5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 107/1268, pos: 3
+ ['dv0']  -> rc0 dv0
+Qi rm5 ch5 > rc0 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm5 ch5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm3 ch3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rm5 ch5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 107/1268, pos: 18
+ ['dv0']  -> rc0 dv0
+Qi rm5 ch5 rc0 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm5 ch5 > rc0 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm3 ch3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rm5 ch5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 107/1268, pos: 33
+ ['dv0']  -> rc0 dv0
+Qi rm5 ch5 rc0 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm5 ch5 rc0 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm3 ch3 > rc0 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rm5 ch5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 107/1268, pos: 48
+ ['dv0']  -> rc0 dv0
+Qi rm5 ch5 rc0 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm5 ch5 rc0 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm3 ch3 rc0 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rm5 ch5 > rc0 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 110/1271, pos: 33
+ ['rc0']  -> dv3
+Qi rm5 ch5 rc0 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm5 ch5 rc0 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm3 ch3 > dv3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rm5 ch5 rc0 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 112/1273, pos: 3
+ ['rc0']  -> dv5
+Qi rm5 ch5 > dv5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm5 ch5 rc0 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm3 ch3 dv3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rm5 ch5 rc0 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 112/1273, pos: 18
+ ['rc0']  -> dv5
+Qi rm5 ch5 dv5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm5 ch5 > dv5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm3 ch3 dv3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rm5 ch5 rc0 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 112/1273, pos: 48
+ ['rc0']  -> dv5
+Qi rm5 ch5 dv5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm5 ch5 dv5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm3 ch3 dv3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rm5 ch5 > dv5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 114/1275, pos: 3
+ ['dv5']  -> rm5
+Qi rm5 ch5 > rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm5 ch5 dv5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm3 ch3 dv3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rm5 ch5 dv5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 114/1275, pos: 18
+ ['dv5']  -> rm5
+Qi rm5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm5 ch5 > rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm3 ch3 dv3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rm5 ch5 dv5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 114/1275, pos: 33
+ ['dv3']  -> rm3
+Qi rm5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm3 ch3 > rm3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rm5 ch5 dv5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 114/1275, pos: 48
+ ['dv5']  -> rm5
+Qi rm5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm3 ch3 rm3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rm5 ch5 > rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 115/1276, pos: 1
+ ['rm5']  -> sh5
+Qi > sh5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm3 ch3 rm3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rm5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 115/1276, pos: 16
+ ['rm5']  -> sh5
+Qi sh5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi > sh5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi rm3 ch3 rm3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rm5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 115/1276, pos: 31
+ ['rm3']  -> sh3
+Qi sh5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi > sh3 ch3 rm3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi rm5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 115/1276, pos: 46
+ ['rm5']  -> sh5
+Qi sh5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 ch3 rm3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi > sh5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 116, pos: 2,3,4
+ ['ch5', 'rm5', 'dv0']  -> dv0
+Qi sh5 > dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 ch3 rm3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 116, pos: 15,16,17
+ ['ch5', 'rm5', 'dv0']  -> dv0
+Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 > dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 ch3 rm3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 116, pos: 28,29,30
+ ['ch3', 'rm3', 'dv0']  -> dv0
+Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 > dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 ch5 rm5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 116, pos: 41,42,43
+ ['ch5', 'rm5', 'dv0']  -> dv0
+Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 > dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 123, pos: 6
+ ['eh5']  -> th5
+Qi sh5 dv0 r0bA c0bA h1 > th5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 123, pos: 19
+ ['eh5']  -> th5
+Qi sh5 dv0 r0bA c0bA h1 th5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 > th5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 123, pos: 45
+ ['eh5']  -> th5
+Qi sh5 dv0 r0bA c0bA h1 th5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 th5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 > th5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 131, pos: 32
+ ['eh3']  -> th3
+Qi sh5 dv0 r0bA c0bA h1 th5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 th5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA h1 > th3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 th5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 139, pos: 6
+ ['th5']  -> eh5
+Qi sh5 dv0 r0bA c0bA h1 > eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 th5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA h1 th3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 th5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 139, pos: 19
+ ['th5']  -> eh5
+Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 > eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA h1 th3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 th5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 139, pos: 32
+ ['th3']  -> eh3
+Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA h1 > eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 th5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 139, pos: 45
+ ['th5']  -> eh5
+Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 > eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 142, pos: 5
+ ['h1']  -> hn1
+Qi sh5 dv0 r0bA c0bA > hn1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 142, pos: 6
+ ['eh5']  -> en5
+Qi sh5 dv0 r0bA c0bA hn1 > en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 142, pos: 18
+ ['h1']  -> hn1
+Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA > hn1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 142, pos: 19
+ ['eh5']  -> en5
+Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA hn1 > en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 142, pos: 31
+ ['h1']  -> hn1
+Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA > hn1 eh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 142, pos: 32
+ ['eh3']  -> en3
+Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA hn1 > en3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 142, pos: 44
+ ['h1']  -> hn1
+Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA hn1 en3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA > hn1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 142, pos: 45
+ ['eh5']  -> en5
+Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA hn1 en3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA hn1 > en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 143, pos: 11
+ ['r0eA']  -> r0eA enb
+Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA > r0eA enb Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA hn1 en3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 143, pos: 25
+ ['r0eA']  -> r0eA enb
+Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA > r0eA enb Qf Qi sh3 dv0 r0bA c0bA hn1 en3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 143, pos: 39
+ ['r0eA']  -> r0eA enb
+Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA hn1 en3 ev2 tsh32312111 X1 c0eA > r0eA enb Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 143, pos: 53
+ ['r0eA']  -> r0eA enb
+Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA hn1 en3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA > r0eA enb Qf
+
+feature: rlig, lookup: 169, pos: 5
+ ['hn1']  -> h1
+Qi sh5 dv0 r0bA c0bA > h1 en5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA hn1 en3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 169, pos: 6
+ ['en5']  -> eh5
+Qi sh5 dv0 r0bA c0bA h1 > eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA hn1 en3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 169, pos: 19
+ ['hn1']  -> h1
+Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA > h1 en5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA hn1 en3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 169, pos: 20
+ ['en5']  -> eh5
+Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 > eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA hn1 en3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 169, pos: 33
+ ['hn1']  -> h1
+Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA > h1 en3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 169, pos: 34
+ ['en3']  -> eh3
+Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA h1 > eh3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA hn1 en5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 169, pos: 47
+ ['hn1']  -> h1
+Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA > h1 en5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 169, pos: 48
+ ['en5']  -> eh5
+Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 > eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 171, pos: 6
+ ['eh5']  -> sh5
+Qi sh5 dv0 r0bA c0bA h1 > sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 171, pos: 20
+ ['eh5']  -> sh5
+Qi sh5 dv0 r0bA c0bA h1 sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 > sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA h1 eh3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 171, pos: 34
+ ['eh3']  -> sh3
+Qi sh5 dv0 r0bA c0bA h1 sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA h1 > sh3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 eh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 171, pos: 48
+ ['eh5']  -> sh5
+Qi sh5 dv0 r0bA c0bA h1 sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA h1 sh3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 > sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 174, pos: 4,5
+ ['c0bA', 'h1']  -> c0bA
+Qi sh5 dv0 r0bA > c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA h1 sh3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 174, pos: 17,18
+ ['c0bA', 'h1']  -> c0bA
+Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA > c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA h1 sh3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 174, pos: 30,31
+ ['c0bA', 'h1']  -> c0bA
+Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA > c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA h1 sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 174, pos: 43,44
+ ['c0bA', 'h1']  -> c0bA
+Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA > c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 176, pos: 10,11
+ ['r0eA', 'enb']  -> r0eA
+Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA > r0eA Qf Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf Qi sh3 dv0 r0bA c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 176, pos: 22,23
+ ['r0eA', 'enb']  -> r0eA
+Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA > r0eA Qf Qi sh3 dv0 r0bA c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA enb Qf Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 176, pos: 34,35
+ ['r0eA', 'enb']  -> r0eA
+Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA sh3 ev2 tsh32312111 X1 c0eA > r0eA Qf Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA enb Qf
+
+feature: rlig, lookup: 176, pos: 46,47
+ ['r0eA', 'enb']  -> r0eA
+Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA > r0eA Qf
+
+feature: rlig, lookup: 177, pos: 2,3
+ ['dv0', 'r0bA']  -> r0bA
+Qi sh5 > r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 177, pos: 13,14
+ ['dv0', 'r0bA']  -> r0bA
+Qi sh5 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 > r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 dv0 r0bA c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 177, pos: 24,25
+ ['dv0', 'r0bA']  -> r0bA
+Qi sh5 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 > r0bA c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 dv0 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 177, pos: 35,36
+ ['dv0', 'r0bA']  -> r0bA
+Qi sh5 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 r0bA c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 > r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 180, pos: 2
+ ['r0bA']  -> r0bA v0
+Qi sh5 > r0bA v0 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 r0bA c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 180, pos: 14
+ ['r0bA']  -> r0bA v0
+Qi sh5 r0bA v0 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 > r0bA v0 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 r0bA c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 180, pos: 26
+ ['r0bA']  -> r0bA v0
+Qi sh5 r0bA v0 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 r0bA v0 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 > r0bA v0 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 r0bA c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 180, pos: 38
+ ['r0bA']  -> r0bA v0
+Qi sh5 r0bA v0 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 r0bA v0 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 r0bA v0 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 > r0bA v0 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 187, pos: 3
+ ['v0']  -> v1
+Qi sh5 r0bA > v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 r0bA v0 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 r0bA v0 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 r0bA v0 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 187, pos: 15
+ ['v0']  -> v1
+Qi sh5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 r0bA > v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 r0bA v0 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 r0bA v0 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 187, pos: 27
+ ['v0']  -> v1
+Qi sh5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 r0bA > v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 r0bA v0 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 187, pos: 39
+ ['v0']  -> v1
+Qi sh5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 r0bA > v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 188/1318, pos: 2
+ ['r0bA']  -> trg6 r0bA
+Qi sh5 > trg6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 188/1318, pos: 15
+ ['r0bA']  -> trg6 r0bA
+Qi sh5 trg6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 > trg6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 188/1318, pos: 28
+ ['r0bA']  -> trg6 r0bA
+Qi sh5 trg6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 > trg6 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 188/1318, pos: 41
+ ['r0bA']  -> trg6 r0bA
+Qi sh5 trg6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 > trg6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 189, pos: 3
+ ['r0bA']  -> cv0 r0bA
+Qi sh5 trg6 > cv0 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 189, pos: 8
+ ['ev6']  -> cv6 ev6
+Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 > cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 189, pos: 18
+ ['r0bA']  -> cv0 r0bA
+Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 > cv0 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 189, pos: 23
+ ['ev6']  -> cv6 ev6
+Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 > cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 189, pos: 33
+ ['r0bA']  -> cv0 r0bA
+Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 > cv0 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 189, pos: 38
+ ['ev2']  -> cv2 ev2
+Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 cv0 r0bA v1 c0bA sh3 > cv2 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 189, pos: 48
+ ['r0bA']  -> cv0 r0bA
+Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 cv0 r0bA v1 c0bA sh3 cv2 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 > cv0 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 189, pos: 53
+ ['ev6']  -> cv6 ev6
+Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 cv0 r0bA v1 c0bA sh3 cv2 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 > cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 193, pos: 3,8
+ ['cv0', 'cv6']  -> cv6
+Qi sh5 trg6 > cv6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 cv0 r0bA v1 c0bA sh3 cv2 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 193, pos: 17,22
+ ['cv0', 'cv6']  -> cv6
+Qi sh5 trg6 cv6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 > cv6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 cv0 r0bA v1 c0bA sh3 cv2 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 193, pos: 31,36
+ ['cv0', 'cv2']  -> cv2
+Qi sh5 trg6 cv6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 cv6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 > cv2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 cv0 r0bA v1 c0bA sh5 cv6 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 193, pos: 45,50
+ ['cv0', 'cv6']  -> cv6
+Qi sh5 trg6 cv6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 cv6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 cv2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 > cv6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 194, pos: 3
+ ['cv6']  -> cv6 rm6
+Qi sh5 trg6 > cv6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 cv6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 cv2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 cv6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 194, pos: 18
+ ['cv6']  -> cv6 rm6
+Qi sh5 trg6 cv6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 > cv6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 cv2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 cv6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 194, pos: 33
+ ['cv2']  -> cv2 rm2
+Qi sh5 trg6 cv6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 cv6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 > cv2 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 cv6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 194, pos: 48
+ ['cv6']  -> cv6 rm6
+Qi sh5 trg6 cv6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 cv6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 cv2 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 > cv6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 195, pos: 3,18
+ ['cv6', 'cv6']  -> cv12
+Qi sh5 trg6 > cv12 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 cv2 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 cv6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 195, pos: 32,47
+ ['cv2', 'cv6']  -> cv8
+Qi sh5 trg6 cv12 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 > cv8 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 196, pos: 3,32
+ ['cv12', 'cv8']  -> cv20
+Qi sh5 trg6 > cv20 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 200, pos: 2,3
+ ['trg6', 'cv20']  -> dv14
+Qi sh5 > dv14 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 201, pos: 3
+ ['rm6']  -> th6
+Qi sh5 dv14 > th6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 201, pos: 17
+ ['rm6']  -> th6
+Qi sh5 dv14 th6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 > th6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 rm6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 201, pos: 45
+ ['rm6']  -> th6
+Qi sh5 dv14 th6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 th6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 > th6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 202/1320, pos: 3
+ ['th6']  -> dda rm5
+Qi sh5 dv14 > dda rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 th6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 th6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 202/1320, pos: 18
+ ['th6']  -> dda rm5
+Qi sh5 dv14 dda rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 > dda rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 th6 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 202/1320, pos: 47
+ ['th6']  -> dda rm5
+Qi sh5 dv14 dda rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 dda rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 > dda rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 203, pos: 3
+ ['dda']  -> dd1
+Qi sh5 dv14 > dd1 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 dda rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dda rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 203, pos: 18
+ ['dda']  -> dd1
+Qi sh5 dv14 dd1 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 > dd1 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dda rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 203, pos: 47
+ ['dda']  -> dd1
+Qi sh5 dv14 dd1 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 > dd1 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 204, pos: 2,3
+ ['dv14', 'dd1']  -> dv13
+Qi sh5 > dv13 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 205, pos: 3
+ ['rm5']  -> th5
+Qi sh5 dv13 > th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 205, pos: 18
+ ['rm5']  -> th5
+Qi sh5 dv13 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 dd1 > th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 205, pos: 47
+ ['rm5']  -> th5
+Qi sh5 dv13 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 > th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 206/1321, pos: 3
+ ['th5']  -> dda rm4
+Qi sh5 dv13 > dda rm4 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 207, pos: 3
+ ['dda']  -> dd1
+Qi sh5 dv13 > dd1 rm4 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 208, pos: 2,3
+ ['dv13', 'dd1']  -> dv12
+Qi sh5 > dv12 rm4 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 212, pos: 2,17
+ ['dv12', 'dd1']  -> dv11
+Qi sh5 > dv11 rm4 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 213, pos: 3
+ ['rm4']  -> th4
+Qi sh5 dv11 > th4 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 214/1323, pos: 3
+ ['th4']  -> dda rm3
+Qi sh5 dv11 > dda rm3 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 215, pos: 3
+ ['dda']  -> dd1
+Qi sh5 dv11 > dd1 rm3 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 216, pos: 2,3
+ ['dv11', 'dd1']  -> dv10
+Qi sh5 > dv10 rm3 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 217, pos: 3
+ ['rm3']  -> th3
+Qi sh5 dv10 > th3 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 218/1324, pos: 3
+ ['th3']  -> dda rm2
+Qi sh5 dv10 > dda rm2 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 219, pos: 3
+ ['dda']  -> dd1
+Qi sh5 dv10 > dd1 rm2 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 220, pos: 2,3
+ ['dv10', 'dd1']  -> dv9
+Qi sh5 > dv9 rm2 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 221, pos: 3
+ ['rm2']  -> th2
+Qi sh5 dv9 > th2 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 221, pos: 31
+ ['rm2']  -> th2
+Qi sh5 dv9 th2 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 > th2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 222/1325, pos: 3
+ ['th2']  -> dda rm1
+Qi sh5 dv9 > dda rm1 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 th2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 223, pos: 3
+ ['dda']  -> dd1
+Qi sh5 dv9 > dd1 rm1 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 th2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 224, pos: 2,3
+ ['dv9', 'dd1']  -> dv8
+Qi sh5 > dv8 rm1 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 th2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 225, pos: 17
+ ['th5']  -> rm5
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 > rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 th2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 225, pos: 31
+ ['th2']  -> rm2
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 > rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 th5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 225, pos: 46
+ ['th5']  -> rm5
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 > rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 227, pos: 8
+ ['ev6']  -> rc0
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 > rc0 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 227, pos: 22
+ ['ev6']  -> rc0
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 rc0 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 > rc0 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 227, pos: 36
+ ['ev2']  -> rc0
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 rc0 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 rc0 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 > rc0 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 ev6 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 227, pos: 51
+ ['ev6']  -> rc0
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 rc0 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 rc0 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 rc0 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 > rc0 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 229/1327, pos: 22
+ ['rc0']  -> ev5
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 rc0 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 > ev5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 rc0 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 rc0 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 229/1327, pos: 51
+ ['rc0']  -> ev5
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 rc0 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 ev5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 rc0 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 > ev5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 232/1330, pos: 36
+ ['rc0']  -> ev2
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 rc0 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 ev5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 > ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 ev5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 233/1331, pos: 8
+ ['rc0']  -> ev1
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 > ev1 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 ev5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 ev5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 250, pos: 8
+ ['ev1']  -> xv1
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 > xv1 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 ev5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 ev2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 ev5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 256, pos: 36
+ ['ev2']  -> xv2
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 xv1 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 ev5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 > xv2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 ev5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 268, pos: 22
+ ['ev5']  -> xv5
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 xv1 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 > xv5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 xv2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 ev5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 268, pos: 51
+ ['ev5']  -> xv5
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 xv1 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 xv5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 xv2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 > xv5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 270, pos: 8
+ ['xv1']  -> sv1
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 > sv1 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 xv5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 xv2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 xv5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 270, pos: 22
+ ['xv5']  -> sv5
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 > sv5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 xv2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 xv5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 270, pos: 36
+ ['xv2']  -> sv2
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 > sv2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 xv5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 270, pos: 51
+ ['xv5']  -> sv5
+Qi sh5 dv8 rm1 r0bA v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 > sv5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 283, pos: 4,5
+ ['r0bA', 'v1']  -> r0bA
+Qi sh5 dv8 rm1 > r0bA c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA v1 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 283, pos: 17,18
+ ['r0bA', 'v1']  -> r0bA
+Qi sh5 dv8 rm1 r0bA c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 > r0bA c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA v1 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 283, pos: 30,31
+ ['r0bA', 'v1']  -> r0bA
+Qi sh5 dv8 rm1 r0bA c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 > r0bA c0bA sh3 sv2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA v1 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 283, pos: 44,45
+ ['r0bA', 'v1']  -> r0bA
+Qi sh5 dv8 rm1 r0bA c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA c0bA sh3 sv2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 > r0bA c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 285, pos: 3,4
+ ['rm1', 'r0bA']  -> r0v1
+Qi sh5 dv8 > r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 rm5 r0bA c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA c0bA sh3 sv2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 285, pos: 15,16
+ ['rm5', 'r0bA']  -> r0v5
+Qi sh5 dv8 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 > r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 rm2 r0bA c0bA sh3 sv2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 285, pos: 27,28
+ ['rm2', 'r0bA']  -> r0v2
+Qi sh5 dv8 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 > r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 rm5 r0bA c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 285, pos: 40,41
+ ['rm5', 'r0bA']  -> r0v5
+Qi sh5 dv8 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eA Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 > r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 290, pos: 10
+ ['r0eA']  -> r0eB
+Qi sh5 dv8 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA > r0eB Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 290, pos: 22
+ ['r0eA']  -> r0eB
+Qi sh5 dv8 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA > r0eB Qf Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eA Qf Qi sh5 trg6 dd1 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 290, pos: 34
+ ['r0eA']  -> r0eB
+Qi sh5 dv8 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA > r0eB Qf Qi sh5 trg6 dd1 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eA Qf
+
+feature: rlig, lookup: 290, pos: 47
+ ['r0eA']  -> r0eB
+Qi sh5 dv8 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 dd1 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA > r0eB Qf
+
+feature: blws, lookup: 308, pos: 4
+ ['c0bA']  -> c0bA imb
+Qi sh5 dv8 r0v1 > c0bA imb sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 dd1 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 308, pos: 17
+ ['c0bA']  -> c0bA imb
+Qi sh5 dv8 r0v1 c0bA imb sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 > c0bA imb sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 dd1 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 308, pos: 30
+ ['c0bA']  -> c0bA imb
+Qi sh5 dv8 r0v1 c0bA imb sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA imb sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 > c0bA imb sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 dd1 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 308, pos: 44
+ ['c0bA']  -> c0bA imb
+Qi sh5 dv8 r0v1 c0bA imb sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA imb sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 c0bA imb sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 dd1 r0v5 > c0bA imb sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 510, pos: 5
+ ['imb']  -> rc0
+Qi sh5 dv8 r0v1 c0bA > rc0 sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA imb sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 c0bA imb sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 dd1 r0v5 c0bA imb sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 510, pos: 18
+ ['imb']  -> rc0
+Qi sh5 dv8 r0v1 c0bA rc0 sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA > rc0 sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 c0bA imb sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 dd1 r0v5 c0bA imb sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 510, pos: 31
+ ['imb']  -> rc0
+Qi sh5 dv8 r0v1 c0bA rc0 sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA rc0 sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 c0bA > rc0 sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 dd1 r0v5 c0bA imb sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 510, pos: 45
+ ['imb']  -> rc0
+Qi sh5 dv8 r0v1 c0bA rc0 sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA rc0 sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 c0bA rc0 sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 dd1 r0v5 c0bA > rc0 sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 532, pos: 4,5
+ ['c0bA', 'rc0']  -> c0bA
+Qi sh5 dv8 r0v1 > c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA rc0 sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 c0bA rc0 sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 dd1 r0v5 c0bA rc0 sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 532, pos: 16,17
+ ['c0bA', 'rc0']  -> c0bA
+Qi sh5 dv8 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 > c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 c0bA rc0 sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 dd1 r0v5 c0bA rc0 sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 532, pos: 28,29
+ ['c0bA', 'rc0']  -> c0bA
+Qi sh5 dv8 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 > c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 dd1 r0v5 c0bA rc0 sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 532, pos: 41,42
+ ['c0bA', 'rc0']  -> c0bA
+Qi sh5 dv8 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 dd1 r0v5 > c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 540, pos: 2,39
+ ['dv8', 'dd1']  -> dv7
+Qi sh5 > dv7 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 611, pos: 4
+ ['c0bA']  -> cvb c0bA
+Qi sh5 dv7 r0v1 > cvb c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 611, pos: 17
+ ['c0bA']  -> cvb c0bA
+Qi sh5 dv7 r0v1 cvb c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 > cvb c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 611, pos: 30
+ ['c0bA']  -> cvb c0bA
+Qi sh5 dv7 r0v1 cvb c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 cvb c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 > cvb c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 611, pos: 43
+ ['c0bA']  -> cvb c0bA
+Qi sh5 dv7 r0v1 cvb c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 cvb c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 cvb c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 r0v5 > cvb c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 621, pos: 4,5
+ ['cvb', 'c0bA']  -> c0bA
+Qi sh5 dv7 r0v1 > c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 cvb c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 cvb c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 r0v5 cvb c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 621, pos: 16,17
+ ['cvb', 'c0bA']  -> c0bA
+Qi sh5 dv7 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 > c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 cvb c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 r0v5 cvb c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 621, pos: 28,29
+ ['cvb', 'c0bA']  -> c0bA
+Qi sh5 dv7 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 > c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 r0v5 cvb c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: blws, lookup: 621, pos: 40,41
+ ['cvb', 'c0bA']  -> c0bA
+Qi sh5 dv7 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 r0v5 > c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: psts, lookup: 1104, pos: 10,11
+ ['r0eB', 'Qf']  -> r0eB
+Qi sh5 dv7 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA > r0eB Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: psts, lookup: 1104, pos: 21,22
+ ['r0eB', 'Qf']  -> r0eB
+Qi sh5 dv7 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA > r0eB Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qf Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: psts, lookup: 1104, pos: 32,33
+ ['r0eB', 'Qf']  -> r0eB
+Qi sh5 dv7 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA > r0eB Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qf
+
+feature: psts, lookup: 1104, pos: 43,44
+ ['r0eB', 'Qf']  -> r0eB
+Qi sh5 dv7 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA > r0eB
+
+feature: psts, lookup: 1113, pos: 0,1
+ ['Qi', 'sh5']  -> QB5
+> QB5 dv7 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1113, pos: 10,11
+ ['Qi', 'sh5']  -> QB5
+QB5 dv7 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB > QB5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB Qi sh3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1113, pos: 20,21
+ ['Qi', 'sh3']  -> QB3
+QB5 dv7 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB > QB3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB Qi sh5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1113, pos: 30,31
+ ['Qi', 'sh5']  -> QB5
+QB5 dv7 r0v1 c0bA sh5 sv1 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB > QB5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1114, pos: 4
+ ['sh5']  -> h5 sh5
+QB5 dv7 r0v1 c0bA > h5 sh5 sv1 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1114, pos: 15
+ ['sh5']  -> h5 sh5
+QB5 dv7 r0v1 c0bA h5 sh5 sv1 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 c0bA > h5 sh5 sv5 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 c0bA sh3 sv2 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1114, pos: 26
+ ['sh3']  -> h3 sh3
+QB5 dv7 r0v1 c0bA h5 sh5 sv1 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 c0bA h5 sh5 sv5 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 c0bA > h3 sh3 sv2 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0bA sh5 sv5 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1114, pos: 37
+ ['sh5']  -> h5 sh5
+QB5 dv7 r0v1 c0bA h5 sh5 sv1 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 c0bA h5 sh5 sv5 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 c0bA h3 sh3 sv2 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0bA > h5 sh5 sv5 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1115, pos: 3,4
+ ['c0bA', 'h5']  -> c0h5
+QB5 dv7 r0v1 > c0h5 sh5 sv1 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 c0bA h5 sh5 sv5 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 c0bA h3 sh3 sv2 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0bA h5 sh5 sv5 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1115, pos: 13,14
+ ['c0bA', 'h5']  -> c0h5
+QB5 dv7 r0v1 c0h5 sh5 sv1 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 > c0h5 sh5 sv5 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 c0bA h3 sh3 sv2 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0bA h5 sh5 sv5 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1115, pos: 23,24
+ ['c0bA', 'h3']  -> c0h3
+QB5 dv7 r0v1 c0h5 sh5 sv1 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 c0h5 sh5 sv5 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 > c0h3 sh3 sv2 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0bA h5 sh5 sv5 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1115, pos: 33,34
+ ['c0bA', 'h5']  -> c0h5
+QB5 dv7 r0v1 c0h5 sh5 sv1 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 c0h5 sh5 sv5 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 c0h3 sh3 sv2 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 > c0h5 sh5 sv5 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1131, pos: 4,5
+ ['sh5', 'sv1']  -> o51
+QB5 dv7 r0v1 c0h5 > o51 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 c0h5 sh5 sv5 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 c0h3 sh3 sv2 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0h5 sh5 sv5 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1131, pos: 13,14
+ ['sh5', 'sv5']  -> o55
+QB5 dv7 r0v1 c0h5 o51 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 c0h5 > o55 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 c0h3 sh3 sv2 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0h5 sh5 sv5 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1131, pos: 22,23
+ ['sh3', 'sv2']  -> o32
+QB5 dv7 r0v1 c0h5 o51 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 c0h3 > o32 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0h5 sh5 sv5 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1131, pos: 31,32
+ ['sh5', 'sv5']  -> o55
+QB5 dv7 r0v1 c0h5 o51 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 c0h3 o32 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0h5 > o55 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1132/1946, pos: 4
+ ['o51']  -> o51 m0 t51
+QB5 dv7 r0v1 c0h5 > o51 m0 t51 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 c0h3 o32 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1132/1946, pos: 15
+ ['o55']  -> o55 m0 t55
+QB5 dv7 r0v1 c0h5 o51 m0 t51 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 c0h5 > o55 m0 t55 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 c0h3 o32 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1132/1946, pos: 26
+ ['o32']  -> o32 m0 t32
+QB5 dv7 r0v1 c0h5 o51 m0 t51 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 t55 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 c0h3 > o32 m0 t32 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1132/1946, pos: 37
+ ['o55']  -> o55 m0 t55
+QB5 dv7 r0v1 c0h5 o51 m0 t51 tsh56454435332211 A1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 t55 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 c0h3 o32 m0 t32 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0h5 > o55 m0 t55 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1147, pos: 6,7
+ ['t51', 'tsh56454435332211']  -> et11
+QB5 dv7 r0v1 c0h5 o51 m0 > et11 A1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 t55 tsh56454435332211 A1 c0eA r0eB QB3 trg6 r0v2 c0h3 o32 m0 t32 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 t55 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1147, pos: 16,17
+ ['t55', 'tsh56454435332211']  -> et45
+QB5 dv7 r0v1 c0h5 o51 m0 et11 A1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 > et45 A1 c0eA r0eB QB3 trg6 r0v2 c0h3 o32 m0 t32 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 t55 tsh56454435332211 A1 c0eA r0eB
+
+feature: psts, lookup: 1147, pos: 37,38
+ ['t55', 'tsh56454435332211']  -> et45
+QB5 dv7 r0v1 c0h5 o51 m0 et11 A1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 et45 A1 c0eA r0eB QB3 trg6 r0v2 c0h3 o32 m0 t32 tsh32312111 X1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 > et45 A1 c0eA r0eB
+
+feature: psts, lookup: 1148, pos: 26,27
+ ['t32', 'tsh32312111']  -> et32
+QB5 dv7 r0v1 c0h5 o51 m0 et11 A1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 et45 A1 c0eA r0eB QB3 trg6 r0v2 c0h3 o32 m0 > et32 X1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 et45 A1 c0eA r0eB
+
+feature: psts, lookup: 1149, pos: 6,7
+ ['et11', 'A1']  -> A1_11
+QB5 dv7 r0v1 c0h5 o51 m0 > A1_11 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 et45 A1 c0eA r0eB QB3 trg6 r0v2 c0h3 o32 m0 et32 X1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 et45 A1 c0eA r0eB
+
+feature: psts, lookup: 1149, pos: 15,16
+ ['et45', 'A1']  -> A1_45
+QB5 dv7 r0v1 c0h5 o51 m0 A1_11 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 > A1_45 c0eA r0eB QB3 trg6 r0v2 c0h3 o32 m0 et32 X1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 et45 A1 c0eA r0eB
+
+feature: psts, lookup: 1149, pos: 24,25
+ ['et32', 'X1']  -> X1
+QB5 dv7 r0v1 c0h5 o51 m0 A1_11 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 A1_45 c0eA r0eB QB3 trg6 r0v2 c0h3 o32 m0 > X1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 et45 A1 c0eA r0eB
+
+feature: psts, lookup: 1149, pos: 33,34
+ ['et45', 'A1']  -> A1_45
+QB5 dv7 r0v1 c0h5 o51 m0 A1_11 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 A1_45 c0eA r0eB QB3 trg6 r0v2 c0h3 o32 m0 X1 c0eA r0eB QB5 trg6 r0v5 c0h5 o55 m0 > A1_45 c0eA r0eB
+
+feature: mark, lookup: 0, pos: 2
+QB5 dv7 > r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o51 m0 A1_11 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o55 m0 A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h3 o32 m0 X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o55 m0 A1_45 c0eA r0eB 
+
+feature: mark, lookup: 0, pos: 11
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o51 m0 A1_11 c0eA r0eB QB5 trg6 > r0v5(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o55 m0 A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h3 o32 m0 X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o55 m0 A1_45 c0eA r0eB 
+
+feature: mark, lookup: 0, pos: 20
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o51 m0 A1_11 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o55 m0 A1_45 c0eA r0eB QB3 trg6 > r0v2(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h3 o32 m0 X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o55 m0 A1_45 c0eA r0eB 
+
+feature: mark, lookup: 0, pos: 29
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o51 m0 A1_11 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o55 m0 A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h3 o32 m0 X1 c0eA r0eB QB5 trg6 > r0v5(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o55 m0 A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 2, pos: 11
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o51 m0 A1_11 c0eA r0eB QB5 trg6 > r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5 o55 m0 A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h3 o32 m0 X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o55 m0 A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 2, pos: 20
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o51 m0 A1_11 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5 o55 m0 A1_45 c0eA r0eB QB3 trg6 > r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+c0h3 o32 m0 X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o55 m0 A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 2, pos: 29
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5 o51 m0 A1_11 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5 o55 m0 A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+c0h3 o32 m0 X1 c0eA r0eB QB5 trg6 > r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -620)]))
+c0h5 o55 m0 A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 4, pos: 3
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+> c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o51 m0 A1_11 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5 o55 m0 A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+c0h3 o32 m0 X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -620)]))
+c0h5 o55 m0 A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 4, pos: 12
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o51 m0 A1_11 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+> c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55 m0 A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+c0h3 o32 m0 X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -620)]))
+c0h5 o55 m0 A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 4, pos: 21
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o51 m0 A1_11 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55 m0 A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+> c0h3(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o32 m0 X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -620)]))
+c0h5 o55 m0 A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 4, pos: 30
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o51 m0 A1_11 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55 m0 A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+c0h3(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o32 m0 X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -620)]))
+> c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55 m0 A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 8, pos: 4
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+> o51(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0 A1_11 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55 m0 A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+c0h3(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o32 m0 X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -620)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55 m0 A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 8, pos: 13
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o51(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0 A1_11 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+> o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0 A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+c0h3(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o32 m0 X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -620)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55 m0 A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 8, pos: 22
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o51(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0 A1_11 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0 A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+c0h3(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+> o32(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0 X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -620)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55 m0 A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 8, pos: 31
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o51(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0 A1_11 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0 A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+c0h3(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o32(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0 X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -620)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+> o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0 A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 66, pos: 5
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o51(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+> m0(dict_items([('XCoordinate', 787), ('YCoordinate', -155)]))
+A1_11 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0 A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+c0h3(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o32(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0 X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -620)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0 A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 66, pos: 14
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o51(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -155)]))
+A1_11 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+> m0(dict_items([('XCoordinate', 787), ('YCoordinate', -775)]))
+A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+c0h3(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o32(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0 X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -620)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0 A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 66, pos: 23
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o51(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -155)]))
+A1_11 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -775)]))
+A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+c0h3(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o32(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+> m0(dict_items([('XCoordinate', 472), ('YCoordinate', -310)]))
+X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -620)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0 A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 66, pos: 32
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o51(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -155)]))
+A1_11 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -775)]))
+A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+c0h3(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o32(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 472), ('YCoordinate', -310)]))
+X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -620)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+> m0(dict_items([('XCoordinate', 787), ('YCoordinate', -775)]))
+A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 67, pos: 6
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o51(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -155)]))
+> A1_11(dict_items([('XCoordinate', 0), ('YCoordinate', -144)]))
+c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -775)]))
+A1_45 c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+c0h3(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o32(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 472), ('YCoordinate', -310)]))
+X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -620)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -775)]))
+A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 67, pos: 15
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o51(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -155)]))
+A1_11(dict_items([('XCoordinate', 0), ('YCoordinate', -144)]))
+c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -775)]))
+> A1_45(dict_items([('XCoordinate', 0), ('YCoordinate', -762)]))
+c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+c0h3(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o32(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 472), ('YCoordinate', -310)]))
+X1 c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -620)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -775)]))
+A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 67, pos: 24
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o51(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -155)]))
+A1_11(dict_items([('XCoordinate', 0), ('YCoordinate', -144)]))
+c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -775)]))
+A1_45(dict_items([('XCoordinate', 0), ('YCoordinate', -762)]))
+c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+c0h3(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o32(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 472), ('YCoordinate', -310)]))
+> X1(dict_items([('XCoordinate', 0), ('YCoordinate', -165)]))
+c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -620)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -775)]))
+A1_45 c0eA r0eB 
+
+feature: mkmk, lookup: 67, pos: 33
+QB5 dv7 r0v1(dict_items([('XCoordinate', 105), ('YCoordinate', 1860)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o51(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -155)]))
+A1_11(dict_items([('XCoordinate', 0), ('YCoordinate', -144)]))
+c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -310)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -775)]))
+A1_45(dict_items([('XCoordinate', 0), ('YCoordinate', -762)]))
+c0eA r0eB QB3 trg6 r0v2(dict_items([('XCoordinate', 0), ('YCoordinate', -1550)]))
+c0h3(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o32(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 472), ('YCoordinate', -310)]))
+X1(dict_items([('XCoordinate', 0), ('YCoordinate', -165)]))
+c0eA r0eB QB5 trg6 r0v5(dict_items([('XCoordinate', 0), ('YCoordinate', -620)]))
+c0h5(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+o55(dict_items([('XCoordinate', 0), ('YCoordinate', 0)]))
+m0(dict_items([('XCoordinate', 787), ('YCoordinate', -775)]))
+> A1_45(dict_items([('XCoordinate', 0), ('YCoordinate', -762)]))
+c0eA r0eB 
+
+Shaped
+QB5(0, 0) dv7(-1785, 0) r0v1(-1680, 1860) c0h5(-1680, 1860) o51(-1680, 1860) m0(-893, 1705) A1_11(-893, 1561) c0eA(-893, 1561) r0eB(-893, 1561) QB5(-893, 1561) trg6(-893, 1561) r0v5(-893, 1251) c0h5(-893, 1251) o55(-893, 1251) m0(-106, 476) A1_45(-106, -286) c0eA(-106, -286) r0eB(-106, -286) QB3(-106, -286) trg6(-106, -286) r0v2(-106, -1836) c0h3(-106, -1836) o32(-106, -1836) m0(366, -2146) X1(366, -2311) c0eA(366, -2311) r0eB(366, -2311) QB5(366, -2311) trg6(366, -2311) r0v5(366, -2931) c0h5(366, -2931) o55(366, -2931) m0(1153, -3706) A1_45(1153, -4468) c0eA(1153, -4468) r0eB(1153, -4468) 

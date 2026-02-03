@@ -1,0 +1,13 @@
+<cmap_format>
+  <map code="0x0" name=".null"/>
+  <map code="0x8" name=".null"/>
+  <map code="0x9" name="nonmarkingreturn"/>
+  <map code="0xd" name="nonmarkingreturn"/>
+  <map code="0x1d" name=".null"/>
+  <map code="0x28" name="parenleft"/>
+  <map code="0x29" name="parenright"/>
+  <map code="0x5b" name="bracketleft"/>
+  <map code="0x5d" name="bracketright"/>
+  <map code="0x7b" name="braceleft"/>
+  <map code="0x7d" name="braceright"/>
+</cmap_format>
