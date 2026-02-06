@@ -1,5 +1,1 @@
-# OpenType Font Analyzer Requirements
-# Install with: pip install -r requirements.txt
-
 lxml>=4.6.0
-# tkinter is included with Python standard library

@@ -269,8 +269,7 @@ def read_single_pos(single, lookup):
 				glyphs.append(glyph_elem.get('value'))
 		elif child.tag == 'ValueFormat':
 			form = child.get('value')
-			# 1 -> XPlacement
-			# 2 -> YPlacement
+   # 1 -> XPlacement# 2 -> YPlacement
 		elif child.tag == 'Value':
 			if form == '1':
 				x = int(child.get('XPlacement'))
@@ -283,6 +282,8 @@ def read_single_pos(single, lookup):
 	adjs = [{'glyph': g, 'placement': a} for (g, a) in zip(glyphs, adjustments)]
 	posit = SingleAdjustment(form, adjs)
 	lookup.add_positioning(posit)
+
+
 
 def read_mark_base_pos(mark_base, lookup):
 	# Type 4: Attach a combining mark to a base glyph

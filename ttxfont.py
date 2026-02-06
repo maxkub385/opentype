@@ -305,18 +305,32 @@ class SingleAdjustment:
 		return None
 
 	def applicable(self, tokens, pos, font, lookup):
-		return tokens[pos] in [adj[0] for adj in self.adjustments]
+		# guard bounds
+		if pos < 0 or pos >= len(tokens):
+			return False
+		# adjustments are dicts with key 'glyph'
+		for adj in self.adjustments:
+			if adj.get('glyph') == tokens[pos]:
+				return True
+		return False
 
 	def apply(self, tokens, positionings, pos, font, lookup):
-		positionings = positionings.copy()
-		for adjs in self.adjustments:
-			if adjs['glyph'] == tokens[pos]:
-				placement = adjs['placement']
-				if 'XPlacement' in placement:
-					positionings['XPlacement'] = placement['XPlacement']
-				if 'YPlacement' in placement:
-					positionings['YPlacement'] = placement['YPlacement']
+		# positionings is list of per-glyph dicts; copy list and per-glyph dict safely
+		positionings = [ (d.copy() if isinstance(d, dict) else {}) for d in positionings ]
+		if pos < 0 or pos >= len(positionings):
 			return positionings
+		for adjs in self.adjustments:
+			if adjs.get('glyph') == tokens[pos]:
+				placement = adjs.get('placement', {})
+				# ensure dict exists for this token
+				if positionings[pos] is None:
+					positionings[pos] = {}
+				# Map Value names (XPlacement/YPlacement) to runtime coords (XCoordinate/YCoordinate)
+				if 'XPlacement' in placement:
+					positionings[pos]['XCoordinate'] = placement['XPlacement']
+				if 'YPlacement' in placement:
+					positionings[pos]['YCoordinate'] = placement['YPlacement']
+		return positionings
 
 	def __str__(self):
 		return ' '.join([str((g,a)) for (g,a) in self.adjustments])
@@ -339,16 +353,26 @@ class MarkBaseAttachment:
 		return mark_index >= 0 and base_index >= 0
 
 	def apply(self, tokens, positionings, pos, font, lookup):
-		positionings = positionings.copy()
+		# copy list and per-glyph dicts safely
+		positionings = [ (d.copy() if isinstance(d, dict) else {}) for d in positionings ]
 		mark_index = self.mark(tokens, pos, font, lookup)
 		pos_base, base_index = self.base(tokens, pos, font, lookup)
+		if mark_index < 0 or pos_base < 0 or base_index < 0:
+			return positionings
 		mark = self.marks[mark_index]
 		base = self.bases[base_index]
 		cl = mark['class']
-		# positionings[pos_base]['XCoordinate'] = mark['x']
-		# positionings[pos_base]['YCoordinate'] = mark['y']
-		positionings[pos]['XCoordinate'] = base['coordinates'][cl]['x'] - mark['x']
-		positionings[pos]['YCoordinate'] = base['coordinates'][cl]['y'] - mark['y']
+		# ensure dicts exist
+		if positionings[pos] is None:
+			positionings[pos] = {}
+		if positionings[pos_base] is None:
+			positionings[pos_base] = {}
+		# defensive coordinate lookup (class may be missing)
+		coords = base.get('coordinates', {}).get(cl)
+		if coords is not None and 'x' in coords and 'y' in coords and 'x' in mark and 'y' in mark:
+			positionings[pos]['XCoordinate'] = coords['x'] - mark['x']
+			positionings[pos]['YCoordinate'] = coords['y'] - mark['y']
+		# otherwise leave positionings unchanged
 		return positionings
 
 	def mark(self, tokens, pos, font, lookup):
@@ -358,17 +382,19 @@ class MarkBaseAttachment:
 		return -1
 
 	def base(self, tokens, pos, font, lookup):
-		pref = tokens[:pos]
-		# Look for base glyph, handling cases where glyph_to_class might not have the entry
-		def is_base_glyph(token):
-			return (token in font.glyph_to_class and 
-					font.glyph_to_class[token] == BASE_GLYPH)
-		
-		pos_base = first_filtered_right(pref, is_base_glyph)
-		if pos_base >= 0:
+		# Search to the left for a base glyph that is not filtered out by lookup
+		for i in range(pos-1, -1, -1):
+			tok = tokens[i]
+			# respect lookup filtering (ignore flags, mark class, filter sets)
+			if not filter_glyph(tok, font, lookup):
+				continue
+			# must be classified as a base glyph
+			if font.glyph_to_class.get(tok) != BASE_GLYPH:
+				continue
+			# match against the declared BaseCoverage entries
 			for index, base in enumerate(self.bases):
-				if base['glyph'] == tokens[pos_base]:
-					return pos_base, index 
+				if base.get('glyph') == tok:
+					return i, index
 		return -1, -1
 
 	def __str__(self):
@@ -392,16 +418,25 @@ class MarkMarkAttachment:
 		return mark1_index >= 0 and mark2_index >= 0
 
 	def apply(self, tokens, positionings, pos, font, lookup):
-		positionings = [d.copy() for d in positionings]
+		# copy list and per-glyph dicts safely
+		positionings = [ (d.copy() if isinstance(d, dict) else {}) for d in positionings ]
 		mark1_index = self.mark1(tokens, pos, font, lookup)
 		pos_mark2, mark2_index = self.mark2(tokens, pos, font, lookup)
+		if mark1_index < 0 or pos_mark2 < 0 or mark2_index < 0:
+			return positionings
 		mark1 = self.marks1[mark1_index]
 		mark2 = self.marks2[mark2_index]
-		cl = mark1['class']
-		# positionings[pos_mark2]['XCoordinate'] = mark1['x']
-		# positionings[pos_mark2]['YCoordinate'] = mark1['y']
-		positionings[pos]['XCoordinate'] = mark2['coordinates'][cl]['x'] - mark1['x']
-		positionings[pos]['YCoordinate'] = mark2['coordinates'][cl]['y'] - mark1['y']
+		cl = mark1.get('class')
+		# ensure dicts exist
+		if pos < 0 or pos >= len(positionings):
+			return positionings
+		if positionings[pos] is None:
+			positionings[pos] = {}
+		# defensive coordinate lookup
+		coords = mark2.get('coordinates', {}).get(cl) if cl is not None else None
+		if coords is not None and 'x' in coords and 'y' in coords and 'x' in mark1 and 'y' in mark1:
+			positionings[pos]['XCoordinate'] = coords['x'] - mark1['x']
+			positionings[pos]['YCoordinate'] = coords['y'] - mark1['y']
 		return positionings
 
 	def mark1(self, tokens, pos, font, lookup):
@@ -411,12 +446,14 @@ class MarkMarkAttachment:
 		return -1
 
 	def mark2(self, tokens, pos, font, lookup):
-		pref = tokens[:pos]
-		pos_mark2 = first_filtered_right(pref, lambda t : filter_glyph(t, font, lookup))
-		if pos_mark2 >= 0:
+		# Search leftwards for a candidate mark2 that passes lookup filtering and matches marks2 coverage
+		for i in range(pos-1, -1, -1):
+			tok = tokens[i]
+			if not filter_glyph(tok, font, lookup):
+				continue
 			for index, mark in enumerate(self.marks2):
-				if mark['glyph'] == tokens[pos_mark2]:
-					return pos_mark2, index 
+				if mark.get('glyph') == tok:
+					return i, index
 		return -1, -1
 
 	def __str__(self):
@@ -437,7 +474,20 @@ class ChainPos:
 		return self.output
 
 	def applicable(self, tokens, pos, font, lookup):
-		return tokens[pos] in self.input and \
+		# accept input that may be flat list or list-of-coverages
+		def input_contains(tok):
+			if self.input is None:
+				return False
+			# if input is a list-of-lists (coverage entries)
+			if len(self.input) > 0 and isinstance(self.input[0], list):
+				for cov in self.input:
+					if tok in cov:
+						return True
+				return False
+			# otherwise flat list
+			return tok in self.input
+
+		return input_contains(tokens[pos]) and \
 			is_suffix_of(self.left, filter_list(tokens[:pos], \
 				lambda t : filter_glyph(t, font, lookup))) and \
 			is_prefix_of(self.input + self.right, filter_list(tokens[pos:], \
@@ -477,26 +527,37 @@ class GPOS_Lookup:
 		return positionings, applications
 
 	def apply_at(self, tokens, positionings, pos, font):
-		for posit in sorted(self.positionings, key=lambda s : s.length()):
+		# Iterate positionings in increasing length order (shorter first)
+		for posit in sorted(self.positionings, key=lambda s: s.length()):
+			# pass this lookup (self) into applicable()
 			if posit.applicable(tokens, pos, font, self):
 				recur = posit.recur()
 				if recur is not None:
-					recur_lookup = font.GPOS[recur]
+					# recur is expected to be an index into font.GPOS_lookups
+					try:
+						recur_lookup = font.GPOS_lookups[recur]
+					except Exception:
+						# missing or invalid recursion target: skip this positioning
+						continue
 					positionings, application = recur_lookup.apply_at(tokens, positionings, pos, font)
-					application['index'] = str(self.index) + '/' + application['index']
+					if application is not None:
+						application['index'] = str(self.index) + '/' + application.get('index', str(recur))
+					else:
+						application = {'index': str(self.index) + '/' + str(recur),
+									   'posses': [pos],
+									   'rule': posit,
+									   'tokens': tokens,
+									   'positionings': positionings}
 				else:
+					# direct application of this positioning
 					positionings = posit.apply(tokens, positionings, pos, font, self)
-					application = {'index': str(self.index), 'posses': [pos], 'rule': posit, \
-						'tokens': tokens, 'positionings': positionings}
+					application = {'index': str(self.index),
+								   'posses': [pos],
+								   'rule': posit,
+								   'tokens': tokens,
+								   'positionings': positionings}
 				return positionings, application
 		return positionings, None
-
-	def __str__(self):
-		s = ' GPOS LOOKUP ' + str(self.index)
-		if self.filter_set:
-			s += str(self.filter_set)
-		for posit in self.positionings:
-			s += posit
 
 class Feature:
 	def __init__(self, tag):
@@ -639,7 +700,8 @@ class Font:
 		return [self.charset_total[ord(c)] for c in s]
 
 	def new_GSUB_lookup(self, t, feat=None):
-		index = str(len(self.GSUB_lookup_list))
+		# use integer index for consistency with readers/writers
+		index = len(self.GSUB_lookup_list)
 		lookup = GSUB_Lookup(index, t)
 		self.add_GSUB_lookup(index, lookup)
 		if feat is not None:
@@ -668,18 +730,32 @@ class Font:
 		return tokens, positionings, applications
 
 	def shape(self, tokens, positionings):
-		places = [(0,0)]
-		x_ref = self.width[tokens[0]]
-		y_ref = 0
+		places = [(0, 0)]  # Start from the first glyph at position (0, 0)
 		x = 0
 		y = 0
-		for pos in positionings[1:]:
-			if 'XCoordinate' in pos:
-				x = x + pos['XCoordinate']
-			if 'YCoordinate' in pos:
-				y = y + pos['YCoordinate']
-			places.append((-x_ref + x, y_ref + y))
+
+		for i, tok in enumerate(tokens[1:]):
+			pos = positionings[i+1]
+
+			dx = pos.get('XCoordinate', 0)
+			dy = pos.get('YCoordinate', 0)
+
+			# Print debug info for each glyph
+			print(f"Glyph: {tok}, dx: {dx}, dy: {dy}, Current position: ({x}, {y})")
+
+			x += dx
+			y += dy
+
+			# Optionally: Adjust x based on the width of the current glyph
+			glyph_width = self.width.get(tok, 0)
+			print(f"Glyph width for {tok}: {glyph_width}")
+
+			x += glyph_width  # Adjust X based on glyph width
+			places.append((x, y))
+
 		return places
+
+
 
 	def render(self, tokens, suppressed=[]):
 		tokens, positionings, applications = self.apply(tokens, suppressed=suppressed)
