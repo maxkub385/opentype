@@ -257,31 +257,39 @@ def read_reverse_subst(reverse, lookup):
 			lookup.substitutions.append(sub)
 
 def read_single_pos(single, lookup):
-	# Type 1: Adjust position of a single glyph
-	form = 0
-	glyphs = []
-	adjustments = []
-	for child in single.findall('*'):
-		if child.tag is None:
-			None
-		elif child.tag == 'Coverage':
-			for glyph_elem in child.findall('*'):
-				glyphs.append(glyph_elem.get('value'))
-		elif child.tag == 'ValueFormat':
-			form = child.get('value')
-   # 1 -> XPlacement# 2 -> YPlacement
-		elif child.tag == 'Value':
-			if form == '1':
-				x = int(child.get('XPlacement'))
-				adjustments.append({'XPlacement': x})
-			else:
-				y = int(child.get('YPlacement'))
-				adjustments.append({'YPlacement': y})
-		else:
-			print('Unexpected in SinglePos', child)
-	adjs = [{'glyph': g, 'placement': a} for (g, a) in zip(glyphs, adjustments)]
-	posit = SingleAdjustment(form, adjs)
-	lookup.add_positioning(posit)
+    # Type 1: Adjust position of a single glyph
+    # ValueFormat is a bitmask. Common bits:
+    # 0x0001 XPlacement, 0x0002 YPlacement, 0x0004 XAdvance, 0x0008 YAdvance
+    value_format = 0
+    glyphs = []
+    adjustments = []
+
+    for child in single.findall('*'):
+        if child.tag is None:
+            continue
+        elif child.tag == 'Coverage':
+            for glyph_elem in child.findall('*'):
+                glyphs.append(glyph_elem.get('value'))
+        elif child.tag == 'ValueFormat':
+            value_format = int(child.get('value'))
+        elif child.tag == 'Value':
+            adj = {}
+            if value_format & 0x0001 and child.get('XPlacement') is not None:
+                adj['XPlacement'] = int(child.get('XPlacement'))
+            if value_format & 0x0002 and child.get('YPlacement') is not None:
+                adj['YPlacement'] = int(child.get('YPlacement'))
+            if value_format & 0x0004 and child.get('XAdvance') is not None:
+                adj['XAdvance'] = int(child.get('XAdvance'))
+            if value_format & 0x0008 and child.get('YAdvance') is not None:
+                adj['YAdvance'] = int(child.get('YAdvance'))
+            adjustments.append(adj)
+        else:
+            print('Unexpected in SinglePos', child)
+
+    adjs = [{'glyph': g, 'placement': a} for (g, a) in zip(glyphs, adjustments)]
+    posit = SingleAdjustment(value_format, adjs)
+    lookup.add_positioning(posit)
+
 
 
 
@@ -362,24 +370,29 @@ def read_mark_mark_pos(mark_base, lookup):
 	lookup.add_positioning(posit)
 
 def read_chain_pos(chain, lookup):
-	# Type 8 Position one or more glyphs in chained context
-	left = []
-	input = []
-	right = []
-	output = None
-	for child in chain.findall('*'):
-		if child.tag == 'BacktrackCoverage':
-			left.append(read_coverage(child))
-		elif child.tag == 'InputCoverage':
-			input = read_coverage(child)
-		elif child.tag == 'LookAheadCoverage':
-			right.append(read_coverage(child))
-		elif child.tag == 'PosLookupRecord':
-			output = int(child.find('LookupListIndex').get('value'))
-		else:
-			print('Unexpected in ChainContextPos', child)
-	posit = ChainPos(left, input, right, output)
-	lookup.add_positioning(posit)
+    # GPOS Type 8: ChainContextPos
+    lefts = []
+    inputs = []
+    rights = []
+    records = []  # list of (SequenceIndex, LookupListIndex)
+
+    for child in chain.findall('*'):
+        if child.tag == 'BacktrackCoverage':
+            lefts.append(read_coverage(child))
+        elif child.tag == 'InputCoverage':
+            inputs.append(read_coverage(child))
+        elif child.tag == 'LookAheadCoverage':
+            rights.append(read_coverage(child))
+        elif child.tag == 'PosLookupRecord':
+            seq_index = int(child.find('SequenceIndex').get('value'))
+            lookup_index = int(child.find('LookupListIndex').get('value'))
+            records.append((seq_index, lookup_index))
+        else:
+            print('Unexpected in ChainContextPos', child)
+
+    posit = ChainPos(lefts, inputs, rights, records)
+    lookup.add_positioning(posit)
+
 
 def read_ext_subst(ext, lookup):
 	for child in ext.findall('*'):

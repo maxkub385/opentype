@@ -294,210 +294,273 @@ class GSUB_Lookup:
 
 # Type 1
 class SingleAdjustment:
-	def __init__(self, form, adjustments):
-		self.form = form
-		self.adjustments = adjustments
+    def __init__(self, form, adjustments):
+        self.form = form  # value_format bitmask
+        self.adjustments = adjustments
 
-	def length(self):
-		return 1
+    def length(self):
+        return 1
 
-	def recur(self):
-		return None
+    def recur(self):
+        return None
 
-	def applicable(self, tokens, pos, font, lookup):
-		# guard bounds
-		if pos < 0 or pos >= len(tokens):
-			return False
-		# adjustments are dicts with key 'glyph'
-		for adj in self.adjustments:
-			if adj.get('glyph') == tokens[pos]:
-				return True
-		return False
+    def applicable(self, tokens, pos, font, lookup):
+        if pos < 0 or pos >= len(tokens):
+            return False
+        for adj in self.adjustments:
+            if adj.get('glyph') == tokens[pos]:
+                return True
+        return False
 
-	def apply(self, tokens, positionings, pos, font, lookup):
-		# positionings is list of per-glyph dicts; copy list and per-glyph dict safely
-		positionings = [ (d.copy() if isinstance(d, dict) else {}) for d in positionings ]
-		if pos < 0 or pos >= len(positionings):
-			return positionings
-		for adjs in self.adjustments:
-			if adjs.get('glyph') == tokens[pos]:
-				placement = adjs.get('placement', {})
-				# ensure dict exists for this token
-				if positionings[pos] is None:
-					positionings[pos] = {}
-				# Map Value names (XPlacement/YPlacement) to runtime coords (XCoordinate/YCoordinate)
-				if 'XPlacement' in placement:
-					positionings[pos]['XCoordinate'] = placement['XPlacement']
-				if 'YPlacement' in placement:
-					positionings[pos]['YCoordinate'] = placement['YPlacement']
-		return positionings
+    def apply(self, tokens, positionings, pos, font, lookup):
+        positionings = [ (d.copy() if isinstance(d, dict) else {}) for d in positionings ]
+        if pos < 0 or pos >= len(positionings):
+            return positionings
 
-	def __str__(self):
-		return ' '.join([str((g,a)) for (g,a) in self.adjustments])
+        for adjs in self.adjustments:
+            if adjs.get('glyph') == tokens[pos]:
+                placement = adjs.get('placement', {})
+                if positionings[pos] is None:
+                    positionings[pos] = {}
+                # store offsets separately from advances
+                if 'XPlacement' in placement:
+                    positionings[pos]['XOffset'] = placement['XPlacement']
+                if 'YPlacement' in placement:
+                    positionings[pos]['YOffset'] = placement['YPlacement']
+                if 'XAdvance' in placement:
+                    positionings[pos]['XAdvance'] = placement['XAdvance']
+                if 'YAdvance' in placement:
+                    positionings[pos]['YAdvance'] = placement['YAdvance']
+        return positionings
+
+    def __str__(self):
+        return ' '.join([str((g,a)) for (g,a) in self.adjustments])
+
 
 # Type 4
 class MarkBaseAttachment:
-	def __init__(self, marks, bases):
-		self.marks = marks
-		self.bases = bases
+    def __init__(self, marks, bases):
+        self.marks = marks
+        self.bases = bases
 
-	def length(self):
-		return 2
+    def length(self):
+        return 2
 
-	def recur(self):
-		return None
+    def recur(self):
+        return None
 
-	def applicable(self, tokens, pos, font, lookup):
-		mark_index = self.mark(tokens, pos, font, lookup)
-		pos_base, base_index = self.base(tokens, pos, font, lookup)
-		return mark_index >= 0 and base_index >= 0
+    def applicable(self, tokens, pos, font, lookup):
+        mark_index = self.mark(tokens, pos, font, lookup)
+        pos_base, base_index = self.base(tokens, pos, font, lookup)
+        return mark_index >= 0 and base_index >= 0
 
-	def apply(self, tokens, positionings, pos, font, lookup):
-		# copy list and per-glyph dicts safely
-		positionings = [ (d.copy() if isinstance(d, dict) else {}) for d in positionings ]
-		mark_index = self.mark(tokens, pos, font, lookup)
-		pos_base, base_index = self.base(tokens, pos, font, lookup)
-		if mark_index < 0 or pos_base < 0 or base_index < 0:
-			return positionings
-		mark = self.marks[mark_index]
-		base = self.bases[base_index]
-		cl = mark['class']
-		# ensure dicts exist
-		if positionings[pos] is None:
-			positionings[pos] = {}
-		if positionings[pos_base] is None:
-			positionings[pos_base] = {}
-		# defensive coordinate lookup (class may be missing)
-		coords = base.get('coordinates', {}).get(cl)
-		if coords is not None and 'x' in coords and 'y' in coords and 'x' in mark and 'y' in mark:
-			positionings[pos]['XCoordinate'] = coords['x'] - mark['x']
-			positionings[pos]['YCoordinate'] = coords['y'] - mark['y']
-		# otherwise leave positionings unchanged
-		return positionings
+    def apply(self, tokens, positionings, pos, font, lookup):
+        positionings = [ (d.copy() if isinstance(d, dict) else {}) for d in positionings ]
 
-	def mark(self, tokens, pos, font, lookup):
-		for index, mark in enumerate(self.marks):
-			if mark['glyph'] == tokens[pos]:
-				return index
-		return -1
+        mark_index = self.mark(tokens, pos, font, lookup)
+        pos_base, base_index = self.base(tokens, pos, font, lookup)
+        if mark_index < 0 or pos_base < 0 or base_index < 0:
+            return positionings
 
-	def base(self, tokens, pos, font, lookup):
-		# Search to the left for a base glyph that is not filtered out by lookup
-		for i in range(pos-1, -1, -1):
-			tok = tokens[i]
-			# respect lookup filtering (ignore flags, mark class, filter sets)
-			if not filter_glyph(tok, font, lookup):
-				continue
-			# must be classified as a base glyph
-			if font.glyph_to_class.get(tok) != BASE_GLYPH:
-				continue
-			# match against the declared BaseCoverage entries
-			for index, base in enumerate(self.bases):
-				if base.get('glyph') == tok:
-					return i, index
-		return -1, -1
+        mark = self.marks[mark_index]
+        base = self.bases[base_index]
+        cl = mark['class']
 
-	def __str__(self):
-		return f'(1) {str(self.marks)} (2) {str(self.bases)}'
+        if positionings[pos] is None:
+            positionings[pos] = {}
+        if positionings[pos_base] is None:
+            positionings[pos_base] = {}
+
+        coords = base.get('coordinates', {}).get(cl)
+        if coords is None:
+            return positionings
+
+        # include base glyph's own current offset (if any)
+        base_x = positionings[pos_base].get('XOffset', 0)
+        base_y = positionings[pos_base].get('YOffset', 0)
+
+        # mark anchor and base anchor -> mark offset
+        if 'x' in coords and 'y' in coords and 'x' in mark and 'y' in mark:
+            positionings[pos]['XOffset'] = (coords['x'] + base_x) - mark['x']
+            positionings[pos]['YOffset'] = (coords['y'] + base_y) - mark['y']
+
+        # marks typically have zero advance; you can enforce if desired:
+        # positionings[pos]['XAdvance'] = 0
+        return positionings
+
+    def mark(self, tokens, pos, font, lookup):
+        for index, mark in enumerate(self.marks):
+            if mark['glyph'] == tokens[pos]:
+                return index
+        return -1
+
+    def base(self, tokens, pos, font, lookup):
+        for i in range(pos-1, -1, -1):
+            tok = tokens[i]
+            if not filter_glyph(tok, font, lookup):
+                continue
+            if font.glyph_to_class.get(tok) != BASE_GLYPH:
+                continue
+            for index, base in enumerate(self.bases):
+                if base.get('glyph') == tok:
+                    return i, index
+        return -1, -1
+
 
 # Type 6
 class MarkMarkAttachment:
-	def __init__(self, marks1, marks2):
-		self.marks1 = marks1
-		self.marks2 = marks2
+    def __init__(self, marks1, marks2):
+        self.marks1 = marks1
+        self.marks2 = marks2
 
-	def length(self):
-		return 2
+    def length(self):
+        return 2
 
-	def recur(self):
-		return None
+    def recur(self):
+        return None
 
-	def applicable(self, tokens, pos, font, lookup):
-		mark1_index = self.mark1(tokens, pos, font, lookup)
-		pos_mark2, mark2_index = self.mark2(tokens, pos, font, lookup)
-		return mark1_index >= 0 and mark2_index >= 0
+    def applicable(self, tokens, pos, font, lookup):
+        mark1_index = self.mark1(tokens, pos, font, lookup)
+        pos_mark2, mark2_index = self.mark2(tokens, pos, font, lookup)
+        return mark1_index >= 0 and mark2_index >= 0
 
-	def apply(self, tokens, positionings, pos, font, lookup):
-		# copy list and per-glyph dicts safely
-		positionings = [ (d.copy() if isinstance(d, dict) else {}) for d in positionings ]
-		mark1_index = self.mark1(tokens, pos, font, lookup)
-		pos_mark2, mark2_index = self.mark2(tokens, pos, font, lookup)
-		if mark1_index < 0 or pos_mark2 < 0 or mark2_index < 0:
-			return positionings
-		mark1 = self.marks1[mark1_index]
-		mark2 = self.marks2[mark2_index]
-		cl = mark1.get('class')
-		# ensure dicts exist
-		if pos < 0 or pos >= len(positionings):
-			return positionings
-		if positionings[pos] is None:
-			positionings[pos] = {}
-		# defensive coordinate lookup
-		coords = mark2.get('coordinates', {}).get(cl) if cl is not None else None
-		if coords is not None and 'x' in coords and 'y' in coords and 'x' in mark1 and 'y' in mark1:
-			positionings[pos]['XCoordinate'] = coords['x'] - mark1['x']
-			positionings[pos]['YCoordinate'] = coords['y'] - mark1['y']
-		return positionings
+    def apply(self, tokens, positionings, pos, font, lookup):
+        positionings = [ (d.copy() if isinstance(d, dict) else {}) for d in positionings ]
 
-	def mark1(self, tokens, pos, font, lookup):
-		for index, mark in enumerate(self.marks1):
-			if mark['glyph'] == tokens[pos]:
-				return index
-		return -1
+        mark1_index = self.mark1(tokens, pos, font, lookup)
+        pos_mark2, mark2_index = self.mark2(tokens, pos, font, lookup)
+        if mark1_index < 0 or pos_mark2 < 0 or mark2_index < 0:
+            return positionings
 
-	def mark2(self, tokens, pos, font, lookup):
-		# Search leftwards for a candidate mark2 that passes lookup filtering and matches marks2 coverage
-		for i in range(pos-1, -1, -1):
-			tok = tokens[i]
-			if not filter_glyph(tok, font, lookup):
-				continue
-			for index, mark in enumerate(self.marks2):
-				if mark.get('glyph') == tok:
-					return i, index
-		return -1, -1
+        mark1 = self.marks1[mark1_index]
+        mark2 = self.marks2[mark2_index]
+        cl = mark1.get('class')
+        if cl is None:
+            return positionings
 
-	def __str__(self):
-		return f'(1) {str(self.marks1)} (2) {str(self.marks2)}'
+        if positionings[pos] is None:
+            positionings[pos] = {}
+        if positionings[pos_mark2] is None:
+            positionings[pos_mark2] = {}
+
+        coords = mark2.get('coordinates', {}).get(cl)
+        if coords is None:
+            return positionings
+
+        # include mark2's current offset (stacking!)
+        m2x = positionings[pos_mark2].get('XOffset', 0)
+        m2y = positionings[pos_mark2].get('YOffset', 0)
+
+        if 'x' in coords and 'y' in coords and 'x' in mark1 and 'y' in mark1:
+            positionings[pos]['XOffset'] = (coords['x'] + m2x) - mark1['x']
+            positionings[pos]['YOffset'] = (coords['y'] + m2y) - mark1['y']
+
+        # mark1 advance should be 0 in most fonts
+        # positionings[pos]['XAdvance'] = 0
+        return positionings
+
+    def mark1(self, tokens, pos, font, lookup):
+        for index, mark in enumerate(self.marks1):
+            if mark['glyph'] == tokens[pos]:
+                return index
+        return -1
+
+    def mark2(self, tokens, pos, font, lookup):
+        for i in range(pos-1, -1, -1):
+            tok = tokens[i]
+            if not filter_glyph(tok, font, lookup):
+                continue
+            for index, mark in enumerate(self.marks2):
+                if mark.get('glyph') == tok:
+                    return i, index
+        return -1, -1
+    
+    def __str__(self):
+        return f'(1) {str(self.marks1)} (2) {str(self.marks2)}'
 
 # Type 8
 class ChainPos:
-	def __init__(self, left, input, right, output):
-		self.left = left
-		self.input = input
-		self.right = right
-		self.output = output
+    def __init__(self, lefts, inputs, rights, records):
+        self.lefts = lefts
+        self.inputs = inputs
+        self.rights = rights
+        self.records = records  # list of (seq_index, lookup_index)
 
-	def length(self):
-		return len(self.left) + 1 + len(self.right)
+    def length(self):
+        # not super meaningful; keep for compatibility
+        return len(self.lefts) + len(self.inputs) + len(self.rights)
 
-	def recur(self):
-		return self.output
+    def recur(self):
+        # return list of (absolute_position, lookup_index) to apply
+        return None  # handled by recur_at()
 
-	def applicable(self, tokens, pos, font, lookup):
-		# accept input that may be flat list or list-of-coverages
-		def input_contains(tok):
-			if self.input is None:
-				return False
-			# if input is a list-of-lists (coverage entries)
-			if len(self.input) > 0 and isinstance(self.input[0], list):
-				for cov in self.input:
-					if tok in cov:
-						return True
-				return False
-			# otherwise flat list
-			return tok in self.input
+    def applicable(self, tokens, pos, font, lookup):
+        # Must match first input coverage at current pos
+        if pos < 0 or pos >= len(tokens):
+            return False
 
-		return input_contains(tokens[pos]) and \
-			is_suffix_of(self.left, filter_list(tokens[:pos], \
-				lambda t : filter_glyph(t, font, lookup))) and \
-			is_prefix_of(self.input + self.right, filter_list(tokens[pos:], \
-				lambda t : filter_glyph(t, font, lookup)))
+        if len(self.inputs) == 0:
+            return False
 
-	def apply(self, tokens, positionings, pos, font, lookup):
-		return positionings
+        def in_cov(tok, cov):
+            return tok in cov
 
-	def __str__(self):
-		return self.left + ' ' + self.input + ' ' + self.right + ' ' + self.output
+        if not in_cov(tokens[pos], self.inputs[0]):
+            return False
+
+        # Backtrack: self.lefts is list of coverages (each a list of glyph names)
+        filtered_left = filter_list(tokens[:pos], lambda t: filter_glyph(t, font, lookup))
+        if len(filtered_left) < len(self.lefts):
+            return False
+        # match suffix
+        for i, cov in enumerate(reversed(self.lefts)):
+            if filtered_left[-(i+1)] not in cov:
+                return False
+
+        # Lookahead: needs to match remaining inputs + rights after pos
+        filtered_right = filter_list(tokens[pos+1:], lambda t: filter_glyph(t, font, lookup))
+
+        need = []
+        for cov in self.inputs[1:]:
+            need.append(cov)
+        for cov in self.rights:
+            need.append(cov)
+
+        if len(filtered_right) < len(need):
+            return False
+
+        for i, cov in enumerate(need):
+            if filtered_right[i] not in cov:
+                return False
+
+        return True
+
+    def recur_at(self, tokens, pos, font, lookup):
+        # Determine absolute positions of the input sequence (filtered)
+        # Input length = len(self.inputs)
+        input_positions = [pos]
+        i = pos + 1
+        while i < len(tokens) and len(input_positions) < len(self.inputs):
+            if filter_glyph(tokens[i], font, lookup):
+                input_positions.append(i)
+            i += 1
+
+        if len(input_positions) < len(self.inputs):
+            return []
+
+        out = []
+        for (seq_index, lookup_index) in self.records:
+            if 0 <= seq_index < len(input_positions):
+                out.append((input_positions[seq_index], lookup_index))
+        return out
+
+    def apply(self, tokens, positionings, pos, font, lookup):
+        # ChainPos itself doesn't change; it triggers other lookups
+        return positionings
+
+    def __str__(self):
+        return f'ChainPos records={self.records}'
+
 
 class GPOS_Lookup:
 	def __init__(self, index, typ):
@@ -527,37 +590,50 @@ class GPOS_Lookup:
 		return positionings, applications
 
 	def apply_at(self, tokens, positionings, pos, font):
-		# Iterate positionings in increasing length order (shorter first)
-		for posit in sorted(self.positionings, key=lambda s: s.length()):
-			# pass this lookup (self) into applicable()
+    # IMPORTANT: keep authoring order; do NOT sort by length.
+		for posit in self.positionings:
 			if posit.applicable(tokens, pos, font, self):
+				# Special handling: ChainPos triggers other lookups at specific positions
+				if isinstance(posit, ChainPos):
+					application = {'index': str(self.index), 'posses': [pos], 'rule': posit,
+								'tokens': tokens, 'positionings': positionings}
+					for pos2, lookup_index in posit.recur_at(tokens, pos, font, self):
+						if lookup_index in font.GPOS_lookups:
+							recur_lookup = font.GPOS_lookups[lookup_index]
+							positionings, app2 = recur_lookup.apply_at(tokens, positionings, pos2, font)
+							if app2 is not None:
+								application['index'] += '/' + app2.get('index', str(lookup_index))
+					application['positionings'] = positionings
+					return positionings, application
+
+				# Normal positioning
 				recur = posit.recur()
 				if recur is not None:
-					# recur is expected to be an index into font.GPOS_lookups
-					try:
+					if recur in font.GPOS_lookups:
 						recur_lookup = font.GPOS_lookups[recur]
-					except Exception:
-						# missing or invalid recursion target: skip this positioning
-						continue
-					positionings, application = recur_lookup.apply_at(tokens, positionings, pos, font)
-					if application is not None:
-						application['index'] = str(self.index) + '/' + application.get('index', str(recur))
+						positionings, application = recur_lookup.apply_at(tokens, positionings, pos, font)
+						if application is not None:
+							application['index'] = str(self.index) + '/' + application.get('index', str(recur))
+						else:
+							application = {'index': str(self.index) + '/' + str(recur),
+										'posses': [pos],
+										'rule': posit,
+										'tokens': tokens,
+										'positionings': positionings}
+						return positionings, application
 					else:
-						application = {'index': str(self.index) + '/' + str(recur),
-									   'posses': [pos],
-									   'rule': posit,
-									   'tokens': tokens,
-									   'positionings': positionings}
+						continue
 				else:
-					# direct application of this positioning
 					positionings = posit.apply(tokens, positionings, pos, font, self)
 					application = {'index': str(self.index),
-								   'posses': [pos],
-								   'rule': posit,
-								   'tokens': tokens,
-								   'positionings': positionings}
-				return positionings, application
+								'posses': [pos],
+								'rule': posit,
+								'tokens': tokens,
+								'positionings': positionings}
+					return positionings, application
+
 		return positionings, None
+
 
 class Feature:
 	def __init__(self, tag):
@@ -730,30 +806,33 @@ class Font:
 		return tokens, positionings, applications
 
 	def shape(self, tokens, positionings):
-		places = [(0, 0)]  # Start from the first glyph at position (0, 0)
-		x = 0
-		y = 0
+    # This returns drawing positions (x,y) for each glyph.
+    # It uses a pen position that advances, and per-glyph offsets that do NOT advance the pen.
+		places = []
+		pen_x = 0
+		pen_y = 0
 
-		for i, tok in enumerate(tokens[1:]):
-			pos = positionings[i+1]
+		for i, tok in enumerate(tokens):
+			pos = positionings[i] if i < len(positionings) else {}
 
-			dx = pos.get('XCoordinate', 0)
-			dy = pos.get('YCoordinate', 0)
+			xoff = pos.get('XOffset', 0)
+			yoff = pos.get('YOffset', 0)
 
-			# Print debug info for each glyph
-			print(f"Glyph: {tok}, dx: {dx}, dy: {dy}, Current position: ({x}, {y})")
+			# advance defaults to glyph width (hmtx); plus any XAdvance/YAdvance adjustments
+			xadv = self.width.get(tok, 0) + pos.get('XAdvance', 0)
+			yadv = pos.get('YAdvance', 0)
 
-			x += dx
-			y += dy
+			# glyph draw position = pen + offset
+			gx = pen_x + xoff
+			gy = pen_y + yoff
+			places.append((gx, gy))
 
-			# Optionally: Adjust x based on the width of the current glyph
-			glyph_width = self.width.get(tok, 0)
-			print(f"Glyph width for {tok}: {glyph_width}")
-
-			x += glyph_width  # Adjust X based on glyph width
-			places.append((x, y))
+			# now advance the pen (offset does NOT affect pen)
+			pen_x += xadv
+			pen_y += yadv
 
 		return places
+
 
 
 
