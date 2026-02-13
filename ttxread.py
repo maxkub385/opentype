@@ -174,15 +174,15 @@ def read_coverage(cov):
 	return tokens
 
 def read_flag(elem, lookup):
-	flag = int(elem.get('value'))
-	# https://learn.microsoft.com/en-us/typography/opentype/otspec160/chapter2
-	right_to_left = bool(flag & 1) # only for GPOS Type 3
-	lookup.ignore_base_glyphs = bool(flag & 2) # skips over base glyphs
-	lookup.ignore_ligatures = bool(flag & 4) # skips over ligatures
-	lookup.ignore_marks = bool(flag & 8) # skips over combining marks
-	mark_filtering_set = bool(flag & 16) 
-		# layout engine skips mark glyphs not in following mark filtering set
-	lookup.mark_class = flag // 256
+    flag = int(elem.get('value'))
+    lookup.right_to_left = bool(flag & 0x0001)
+    lookup.ignore_base_glyphs = bool(flag & 0x0002)
+    lookup.ignore_ligatures = bool(flag & 0x0004)
+    lookup.ignore_marks = bool(flag & 0x0008)
+    lookup.use_mark_filtering_set = bool(flag & 0x0010)
+    lookup.mark_class = (flag & 0xFF00) >> 8
+
+
 
 def read_single_subst(single, lookup):
 	# Type 1: Replace one glyph with one glyph
@@ -527,6 +527,16 @@ def read_ttx(filename):
 	read_GlyphClassDef(doc.find('GDEF/GlyphClassDef'), font)
 	read_MarkAttachClassDef(doc.find('GDEF/MarkAttachClassDef'), font)
 	read_MarkGlyphSetsDef(doc.find('GDEF/MarkGlyphSetsDef'), font)
+	# Egyptian Hieroglyph format-controls / operators:
+	operator_glyphs = ["vj", "hj", "ts", "bs", "te", "be", "crb"]
+
+	for g in operator_glyphs:
+		if g in font.glyphs:
+			if g in font.width:
+				font.width[g] = 0
+			font.glyph_to_class[g] = 4  # COMPONENT_GLYPH
+
+
 	read_GSUB(doc.find('GSUB'), font)
 	read_GPOS(doc.find('GPOS'), font)
 	return font

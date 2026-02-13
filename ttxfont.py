@@ -2,7 +2,18 @@ import os
 from lxml import etree
 from datetime import datetime
 
+import re
 from ttxtables import read_basic_properties, read_post
+
+CONTROL_GLYPH_RE = re.compile(
+    r'^(?:'
+    r'GB\d+(?:_\d+)?|'
+    r'QB\d+|Qi|Qf|cleanup|trg\d+|m\d+|o\d+|'
+    r'c\d+[A-Za-z0-9]+|r\d+[A-Za-z0-9]+|et\d+|tsh\d+|'
+    r'eh\d+|ev\d+|im\d+'
+    r')$'
+)
+
 
 def equiv(elem1, elem2):
 	if isinstance(elem1, list):
@@ -22,6 +33,10 @@ def is_prefix_of(l1, l2):
 	return len(l1) <= len(l2) and equiv_list(l1, l2[:len(l1)])
 
 def filter_glyph(glyph, font, lookup):
+
+	if glyph in ("vj","hj"):
+		print("filter_glyph", glyph, "class", font.glyph_to_class.get(glyph), "ignore_marks", lookup.ignore_marks)
+
 	# Check if glyph exists in classification system
 	if glyph not in font.glyph_to_class:
 		return True  # Allow unclassified glyphs by default
@@ -806,8 +821,6 @@ class Font:
 		return tokens, positionings, applications
 
 	def shape(self, tokens, positionings):
-    # This returns drawing positions (x,y) for each glyph.
-    # It uses a pen position that advances, and per-glyph offsets that do NOT advance the pen.
 		places = []
 		pen_x = 0
 		pen_y = 0
@@ -818,20 +831,29 @@ class Font:
 			xoff = pos.get('XOffset', 0)
 			yoff = pos.get('YOffset', 0)
 
-			# advance defaults to glyph width (hmtx); plus any XAdvance/YAdvance adjustments
-			xadv = self.width.get(tok, 0) + pos.get('XAdvance', 0)
-			yadv = pos.get('YAdvance', 0)
-
-			# glyph draw position = pen + offset
 			gx = pen_x + xoff
 			gy = pen_y + yoff
 			places.append((gx, gy))
 
-			# now advance the pen (offset does NOT affect pen)
+			cl = self.glyph_to_class.get(tok)
+
+			# zero advance for:
+			# - your explicit control/operator glyphs
+			# - marks (since signs like A1_33 are positioned onto a base/root)
+			# - components/operators (vj/hj etc)
+			if CONTROL_GLYPH_RE.match(tok) or cl in (MARK_GLYPH, COMPONENT_GLYPH):
+				xadv = 0
+				yadv = 0
+			else:
+				xadv = self.width.get(tok, 0) + pos.get('XAdvance', 0)
+				yadv = pos.get('YAdvance', 0)
+
 			pen_x += xadv
 			pen_y += yadv
 
 		return places
+
+
 
 
 
